@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Antônio Meneghetti, designer e diretor de arte</title>
+<meta name="description" content="Portfólio de Antônio Meneghetti, designer e diretor de arte em Porto Alegre. Identidade visual, campanhas, social media e direção criativa.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Antônio Meneghetti, designer e diretor de arte">
+<meta property="og:description" content="Portfólio de design e direção de arte em Porto Alegre: identidade visual, campanhas, social media e direção criativa.">
+<meta property="og:image" content="og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FBFBFD">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFFFFF;--tile:#F5F5F7;--tile-2:#E8E8ED;--text:#1D1D1F;--muted:#6E6E73;
+  --link:#0066CC;--btn:#0071E3;--line:#D2D2D7;--dark-tile:#000000;--on-dark:#F5F5F7;
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Inter","Helvetica Neue",Arial,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#000000;--tile:#161617;--tile-2:#232325;--text:#F5F5F7;--muted:#A1A1A6;--link:#2997FF;--btn:#0071E3;--line:#424245;--dark-tile:#161617}}
+:root[data-theme="dark"]{--bg:#000000;--tile:#161617;--tile-2:#232325;--text:#F5F5F7;--muted:#A1A1A6;--link:#2997FF;--btn:#0071E3;--line:#424245;--dark-tile:#161617}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 52px)}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:17px;line-height:1.47;letter-spacing:-.022em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--btn);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1024px,100% - 2.5rem);margin-inline:auto}
+.wide{width:min(1260px,100% - 1.5rem);margin-inline:auto}
+
+/* Barra de navegação */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;height:48px;background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid color-mix(in srgb,var(--line) 60%,transparent)}
+.top .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{color:var(--text);font-weight:600;font-size:15px;letter-spacing:-.01em;white-space:nowrap}
+.brand:hover{text-decoration:none}
+.nav{display:flex;align-items:center;gap:1.8rem;font-size:12.5px}
+.nav a{color:color-mix(in srgb,var(--text) 80%,transparent)}
+.nav a:hover{color:var(--text);text-decoration:none}
+.nav .cta{background:var(--btn);color:#fff;padding:.3rem .8rem;border-radius:999px}
+.nav .cta:hover{color:#fff;filter:brightness(1.08)}
+@media (max-width:700px){.nav a:not(.cta){display:none}}
+
+/* Abertura em meio-tom colorido (CMYK) */
+.hero{position:relative;min-height:calc(100svh - 48px);background:#FBFBFD;color:#1D1D1F;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+#halftone{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:crosshair}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(251,251,253,.92) 0%,rgba(251,251,253,.6) 34%,transparent 58%),linear-gradient(0deg,rgba(251,251,253,.75),transparent 40%)}
+.hero-in{position:relative;z-index:2;padding-bottom:clamp(2.5rem,7vw,5rem);pointer-events:none}
+.hero-in a{pointer-events:auto}
+.hero .kicker{font-size:clamp(15px,1.6vw,19px);font-weight:600;margin:0 0 .8rem;color:#6E6E73}
+.hero h1{font-size:clamp(52px,10vw,132px);font-weight:700;line-height:.95;letter-spacing:-.055em;margin:0;max-width:9ch;color:#1D1D1F}
+.hero .sub{font-size:clamp(18px,2vw,22px);line-height:1.35;color:#515154;max-width:30ch;margin:1.3rem 0 0;font-weight:500}
+.links{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 2rem;margin-top:1.8rem;font-size:19px}
+.hero .chev{color:#0066CC}
+.btn{display:inline-block;background:var(--btn);color:#fff;padding:.7rem 1.4rem;border-radius:999px;font-size:17px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.chev::after{content:"›";margin-left:.25em;font-size:1.1em}
+.hint{position:absolute;z-index:2;top:1.2rem;left:0;right:0;margin:0 auto;text-align:right;font-size:13px;color:#6E6E73;pointer-events:none}
+.hero .kicker,.hero h1,.hero .sub,.hero .links{opacity:0;transform:translateY(18px);animation:rise 1s cubic-bezier(.25,.1,.25,1) forwards}
+.hero h1{animation-delay:.08s}.hero .sub{animation-delay:.18s}.hero .links{animation-delay:.28s}
+@keyframes rise{to{opacity:1;transform:none}}
+@media (max-width:700px){.hint{display:none}.hero::after{background:linear-gradient(0deg,rgba(251,251,253,.95) 0%,rgba(251,251,253,.7) 45%,transparent 70%)}}
+
+section{padding-block:clamp(4rem,9vw,7rem)}
+.head{text-align:center;margin-bottom:clamp(2rem,5vw,3.5rem)}
+h2{font-size:clamp(34px,5.2vw,56px);font-weight:700;line-height:1.07;letter-spacing:-.035em;margin:0 auto;max-width:18ch}
+.head p{font-size:clamp(19px,2vw,21px);color:var(--muted);max-width:40ch;margin:1rem auto 0;font-weight:500}
+
+.tile{background:var(--tile);border-radius:28px;overflow:hidden}
+
+/* Sobre */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+.about .photo{min-height:520px}
+
+.about .text{padding:clamp(2rem,4vw,3rem);display:flex;flex-direction:column;justify-content:center}
+.about .text h3{font-size:clamp(26px,3vw,32px);font-weight:700;letter-spacing:-.03em;line-height:1.12;margin:0 0 1.2rem}
+.about .text p{margin:0 0 1rem;color:var(--muted)}
+.about .text p strong{color:var(--text);font-weight:600}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;grid-column:1/-1}
+.fact{padding:2rem;text-align:center}
+.fact strong{display:block;font-size:clamp(22px,2.6vw,28px);font-weight:700;letter-spacing:-.03em;line-height:1.15}
+.fact span{display:block;margin-top:.4rem;color:var(--muted)}
+@media (max-width:820px){.about{grid-template-columns:1fr}.about .photo{min-height:0;aspect-ratio:4/3}}
+@media (max-width:560px){.facts{grid-template-columns:1fr}}
+
+/* Serviços */
+.svc{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}
+.svc .tile{padding:1.6rem 1.2rem;font-weight:600;font-size:17px;line-height:1.25;min-height:110px;display:flex;align-items:flex-end}
+@media (max-width:900px){.svc{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:560px){.svc{grid-template-columns:repeat(2,1fr)}}
+.tools{text-align:center;margin-top:2.5rem;color:var(--muted);font-size:19px;font-weight:500}
+.tools b{color:var(--text);font-weight:600}
+
+/* Acordeões */
+.acc{border-top:1px solid var(--line)}
+.row{border-bottom:1px solid var(--line)}
+.row-head{all:unset;box-sizing:border-box;width:100%;display:grid;grid-template-columns:1fr auto 1.5rem;gap:1.25rem;align-items:center;padding:1.5rem .25rem;cursor:pointer}
+.row-head:focus-visible{outline:2px solid var(--btn);outline-offset:-2px;border-radius:8px}
+.row-name{font-size:clamp(20px,2.4vw,24px);font-weight:600;letter-spacing:-.025em;line-height:1.2}
+.row-name small{display:block;font-size:15px;font-weight:400;color:var(--muted);letter-spacing:-.01em;margin-top:.2rem}
+.row-year{color:var(--muted);font-size:15px}
+.plus{width:1.1rem;height:1.1rem;position:relative;justify-self:end;color:var(--muted)}
+.plus::before,.plus::after{content:"";position:absolute;inset:50% 0 auto;height:1.5px;background:currentColor;transition:transform .35s cubic-bezier(.25,.1,.25,1)}
+.plus::after{transform:rotate(90deg)}
+.row.open .plus::after{transform:rotate(0)}
+.row-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s cubic-bezier(.25,.1,.25,1)}
+.row.open .row-body{grid-template-rows:1fr}
+.row-inner{overflow:hidden}
+.row-content{padding:0 .25rem 2rem}
+.row-content>p{margin:0 0 1.25rem;max-width:60ch;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;margin:0;padding:0}
+.tags li{list-style:none;padding:.35rem .85rem;border-radius:999px;background:var(--tile);font-size:14px}
+
+/* Galeria com rolagem lateral */
+.gallery{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:.75rem;scrollbar-width:thin}
+.gallery button{all:unset;flex:0 0 min(78%,620px);scroll-snap-align:start;cursor:zoom-in;border-radius:20px;overflow:hidden;background:var(--tile);aspect-ratio:16/9}
+.gallery button:only-child{flex-basis:min(100%,820px)}
+.gallery button:focus-visible{outline:2px solid var(--btn);outline-offset:2px}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.25,.1,.25,1)}
+.gallery button:hover img{transform:scale(1.02)}
+
+/* Prêmio */
+.award{background:var(--dark-tile);color:var(--on-dark);border-radius:28px;overflow:hidden;text-align:center;padding-top:clamp(3rem,6vw,4.5rem)}
+.award .label{font-size:clamp(17px,1.8vw,21px);font-weight:600;color:#A1A1A6;margin:0}
+.award h2{color:var(--on-dark);margin-top:.4rem}
+.award p{color:#A1A1A6;max-width:46ch;margin:1.1rem auto 0;font-size:clamp(17px,1.8vw,19px)}
+.award img{width:min(92%,900px);margin:clamp(2rem,5vw,3rem) auto 0;border-radius:20px 20px 0 0}
+
+/* Contato */
+.contact .tile{padding:clamp(2rem,5vw,4rem)}
+form{display:grid;gap:1.4rem;max-width:680px;margin:0 auto}
+fieldset{border:0;margin:0;padding:0;text-align:center}
+legend{font-weight:600;margin:0 auto .9rem}
+.choices{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem}
+.choices input{position:absolute;opacity:0;pointer-events:none}
+.choices label{padding:.55rem 1.1rem;border-radius:999px;background:var(--bg);border:1px solid var(--line);cursor:pointer;font-size:15px;transition:all .2s}
+.choices input:checked+label{background:var(--text);color:var(--bg);border-color:var(--text)}
+.choices input:focus-visible+label{outline:2px solid var(--btn);outline-offset:3px}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.fields .full{grid-column:1/-1}
+.field input,.field textarea{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:12px;color:var(--text);font:inherit;padding:1rem;resize:vertical}
+.field input::placeholder,.field textarea::placeholder{color:var(--muted)}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--btn);box-shadow:0 0 0 4px color-mix(in srgb,var(--btn) 20%,transparent)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.send{justify-self:center;border:0;font:inherit;padding:.8rem 1.8rem;border-radius:999px;background:var(--btn);color:#fff;cursor:pointer}
+.send:hover{filter:brightness(1.08)}
+.form-msg{min-height:1.5em;margin:0;text-align:center;color:var(--muted)}
+@media (max-width:600px){.fields{grid-template-columns:1fr}}
+
+/* Rodapé */
+footer{background:var(--tile);color:var(--muted);font-size:12.5px;padding-block:2.5rem 2rem}
+.foot{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--line)}
+.foot h3{color:var(--text);font-size:12.5px;font-weight:600;margin:0 0 .7rem}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:.45rem}
+.foot a{color:var(--muted)}
+.foot a:hover{color:var(--text)}
+.copy{padding-top:1rem;margin:0}
+@media (max-width:700px){.foot{grid-template-columns:1fr 1fr}}
+
+/* Revelação ao rolar */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .9s cubic-bezier(.25,.1,.25,1),transform .9s cubic-bezier(.25,.1,.25,1)}
+.reveal.in{opacity:1;transform:none}
+
+dialog{border:0;padding:0;background:transparent;max-width:min(1400px,94vw);max-height:92vh}
+dialog::backdrop{background:rgba(0,0,0,.86);backdrop-filter:blur(8px)}
+dialog img{max-height:86vh;width:auto;border-radius:14px;margin:auto}
+.close{position:fixed;top:calc(env(safe-area-inset-top,0px) + 1rem);right:1rem;border:0;font:inherit;font-size:15px;padding:.5rem 1rem;border-radius:999px;background:rgba(255,255,255,.18);color:#fff;cursor:pointer;backdrop-filter:blur(10px)}
+
+/* Meio-tom como assinatura visual */
+.svc .tile::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .5s ease;
+  background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%),rgba(236,0,140,.55),rgba(0,173,239,.45) 45%,rgba(255,213,0,.4) 70%,transparent 80%);
+  -webkit-mask:radial-gradient(circle,#000 1.5px,transparent 1.9px) 0 0/9px 9px;mask:radial-gradient(circle,#000 1.5px,transparent 1.9px) 0 0/9px 9px}
+.svc .tile:hover::before{opacity:1}
+.award{background-image:radial-gradient(circle,rgba(255,255,255,.09) 1.2px,transparent 1.5px);background-size:12px 12px}
+h2{position:relative}
+.head h2::after{content:"";display:block;width:80px;height:10px;margin:1rem auto 0;background:linear-gradient(90deg,#00ADEF,#EC008C,#FFD500);-webkit-mask:radial-gradient(circle,#000 2.2px,transparent 2.6px) 0 0/10px 10px;mask:radial-gradient(circle,#000 2.2px,transparent 2.6px) 0 0/10px 10px}
+.award h2::after{display:none}
+
+/* ===== Interações ao passar o mouse ===== */
+.tile,.award{position:relative;isolation:isolate}
+.tile::after,.award::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .4s ease;
+  background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%),color-mix(in srgb,var(--btn) 16%,transparent),transparent 60%);z-index:2}
+.award::after{background:radial-gradient(520px circle at var(--mx,50%) var(--my,50%),rgba(41,151,255,.22),transparent 60%)}
+.tile:hover::after,.award:hover::after{opacity:1}
+
+/* Links do menu: sublinhado que cresce do centro */
+.nav a:not(.cta){position:relative;padding-block:.3rem}
+.nav a:not(.cta)::after{content:"";position:absolute;left:50%;right:50%;bottom:0;height:1px;background:currentColor;transition:left .3s ease,right .3s ease}
+.nav a:not(.cta):hover::after{left:0;right:0}
+.brand{transition:opacity .25s}
+.brand:hover{opacity:.65}
+
+/* Botões: brilho que atravessa, leve crescimento e efeito magnético */
+.btn,.send,.nav .cta{position:relative;overflow:hidden;transition:transform .35s cubic-bezier(.25,.1,.25,1),box-shadow .35s ease,filter .3s}
+.btn::before,.send::before,.nav .cta::before{content:"";position:absolute;top:0;bottom:0;left:-60%;width:45%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);transition:left .7s ease}
+.btn:hover::before,.send:hover::before,.nav .cta:hover::before{left:120%}
+.btn:hover,.send:hover{box-shadow:0 12px 30px -10px color-mix(in srgb,var(--btn) 70%,transparent)}
+.chev::after{display:inline-block;transition:transform .3s cubic-bezier(.25,.1,.25,1)}
+.chev:hover{text-decoration:none}
+.chev:hover::after{transform:translateX(5px)}
+
+
+/* Blocos de serviço e fatos: sobem e inclinam em 3D */
+.svc .tile,.fact{transition:transform .25s ease,box-shadow .4s ease,background .4s ease;transform-style:preserve-3d;will-change:transform}
+.fact.in{transition:transform .25s ease,box-shadow .4s ease,opacity .9s}
+.svc .tile:hover,.fact:hover{box-shadow:0 24px 50px -24px rgba(0,0,0,.28);background:var(--tile-2)}
+.svc .tile span{display:block;transition:transform .35s cubic-bezier(.25,.1,.25,1)}
+.svc .tile:hover span{transform:translateZ(30px)}
+
+/* Foto do sobre: zoom lento */
+.about .text strong{background:linear-gradient(transparent 62%,color-mix(in srgb,var(--btn) 22%,transparent) 62%) no-repeat 0 0/0% 100%;transition:background-size .6s ease}
+.about .text:hover strong{background-size:100% 100%}
+
+/* Linhas dos acordeões */
+.row{position:relative;transition:background .4s ease}
+.row::before{content:"";position:absolute;inset:0;border-radius:14px;background:var(--tile);opacity:0;transform:scaleY(.6);transition:opacity .35s ease,transform .35s cubic-bezier(.25,.1,.25,1);z-index:-1}
+.acc{position:relative;z-index:0}
+.row:hover::before{opacity:1;transform:none}
+.row-name{transition:transform .4s cubic-bezier(.25,.1,.25,1)}
+.row-head:hover .row-name{transform:translateX(10px)}
+.row-year{transition:color .3s}
+.row-head:hover .row-year{color:var(--text)}
+.plus{transition:transform .45s cubic-bezier(.25,.1,.25,1),color .3s}
+.row-head:hover .plus{transform:rotate(90deg);color:var(--btn)}
+.tags li{transition:transform .25s ease,background .25s,color .25s}
+.tags li:hover{transform:translateY(-2px);background:var(--btn);color:#fff}
+
+/* Galeria: sobe, aproxima e mostra "Ampliar" */
+.gallery{padding-top:.75rem}
+.gallery button{position:relative;transition:transform .5s cubic-bezier(.25,.1,.25,1),box-shadow .5s ease}
+.gallery button::after{content:"Ampliar";position:absolute;right:14px;bottom:14px;padding:.4rem .9rem;border-radius:999px;background:rgba(0,0,0,.55);color:#fff;font-size:13px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);opacity:0;transform:translateY(8px);transition:opacity .35s,transform .35s}
+.gallery button:hover{transform:translateY(-6px);box-shadow:0 26px 50px -22px rgba(0,0,0,.45)}
+.gallery button:hover img{transform:scale(1.05)}
+.gallery button:hover::after{opacity:1;transform:none}
+
+/* Prêmio */
+.award img{transition:transform 1s cubic-bezier(.25,.1,.25,1)}
+.award:hover img{transform:translateY(-10px) scale(1.02)}
+
+/* Formulário */
+.choices label{transition:transform .25s ease,background .25s,color .25s,border-color .25s}
+.choices label:hover{transform:translateY(-2px);border-color:var(--text)}
+.field input,.field textarea{transition:border-color .25s,box-shadow .25s,transform .25s}
+.field input:hover,.field textarea:hover{border-color:var(--muted)}
+
+/* Rodapé */
+.foot a{display:inline-block;transition:transform .25s ease,color .25s}
+.foot a:hover{transform:translateX(4px);text-decoration:none}
+.tools b{transition:color .25s}
+.tools b:hover{color:var(--btn)}
+
+@media (hover:none){.row-head:hover .row-name{transform:none}.gallery button:hover{transform:none}}
+
+/* ===== Animações dos projetos ===== */
+.gallery > button{opacity:0}
+.row.open .gallery.seen > button{animation:gin 1.5s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i,0)*200ms + 150ms)}
+@keyframes gin{from{opacity:0;transform:translateX(120px) scale(.94);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+.gallery{cursor:grab;scroll-behavior:smooth}
+.gallery.drag{cursor:grabbing;scroll-snap-type:none;scroll-behavior:auto}
+.gallery.drag button{pointer-events:none}
+.gallery::-webkit-scrollbar{display:none}.gallery{scrollbar-width:none}
+.gctrl{display:flex;align-items:center;gap:.6rem;margin-top:1rem}
+.gbar{flex:1;height:3px;border-radius:3px;background:var(--tile-2);overflow:hidden}
+.gbar span{display:block;height:100%;width:var(--p,10%);background:linear-gradient(90deg,#00ADEF,#EC008C,#FFD500);border-radius:3px;transition:width .2s}
+.gprev,.gnext{all:unset;box-sizing:border-box;width:40px;height:40px;border-radius:50%;background:var(--tile);color:var(--text);display:grid;place-items:center;font-size:24px;line-height:1;cursor:pointer;transition:transform .3s cubic-bezier(.25,.1,.25,1),background .3s,color .3s}
+.gprev:hover,.gnext:hover{background:var(--text);color:var(--bg);transform:scale(1.1)}
+.gprev:focus-visible,.gnext:focus-visible{outline:2px solid var(--btn);outline-offset:2px}
+.gprev:disabled,.gnext:disabled{opacity:.35;pointer-events:none}
+
+/* Prévia que segue o cursor sobre os projetos */
+.peek{position:fixed;left:0;top:0;width:340px;aspect-ratio:16/9;border-radius:18px;overflow:hidden;pointer-events:none;z-index:40;opacity:0;
+  transform:translate3d(var(--x,0),var(--y,0),0) translate(-50%,-50%) scale(.6) rotate(var(--r,0deg));transition:opacity .3s ease,transform .45s cubic-bezier(.2,.8,.2,1);box-shadow:0 30px 60px -20px rgba(0,0,0,.45)}
+.peek.on{opacity:1;transform:translate3d(var(--x,0),var(--y,0),0) translate(-50%,-50%) scale(1) rotate(var(--r,0deg))}
+.peek img{width:100%;height:100%;object-fit:cover;transition:opacity .25s}
+@media (hover:none){.peek{display:none}}
+
+/* ===== Posts e carrosséis da Prefeitura ===== */
+.gallery.tall{padding:1.25rem 3rem 1.5rem 1.25rem;gap:1.75rem}
+.gallery.tall button{flex:0 0 clamp(210px,24vw,290px);aspect-ratio:3/4}
+.gallery .post{border-radius:16px}
+.gallery .set{overflow:visible;background:none}
+.set .card{position:absolute;inset:0;border-radius:16px;overflow:hidden;background:var(--tile);box-shadow:0 10px 30px -14px rgba(0,0,0,.35);
+  transition:transform 1.3s cubic-bezier(.2,.8,.2,1),opacity 1s ease;transition-delay:calc(var(--d,0)*180ms)}
+.set .card[data-pos="0"]{z-index:5}
+.set .card[data-pos="1"]{z-index:4}
+.set .card[data-pos="2"]{z-index:3}
+.set .card[data-pos="3"]{z-index:1;opacity:0}
+.set .card[data-pos="-1"]{z-index:6}
+/* antes de a pessoa chegar: tudo empilhado e escondido à direita */
+.set:not(.live) .card{transform:translateX(40%) rotate(6deg);opacity:0}
+.set:not(.live) .card[data-pos="0"]{transform:translateX(18%);opacity:0}
+/* depois: as artes deslizam para o lado e aparecem */
+.set.live .card[data-pos="1"]{transform:translate(12px,4px) rotate(4deg)}
+.set.live .card[data-pos="2"]{transform:translate(22px,8px) rotate(8deg)}
+.set.live .card[data-pos="3"]{transform:translate(22px,8px) rotate(8deg)}
+.set.live .card[data-pos="-1"]{transform:translateX(-55%) rotate(-9deg) scale(.94);opacity:0;transition:transform 1.2s cubic-bezier(.2,.8,.2,1),opacity .8s ease}
+.set.cycling .card{transition-delay:0s}
+.set.jump .card{transition:none!important}
+.set.live:hover .card[data-pos="0"]{transform:translate(-14px,-4px) rotate(-4deg)}
+.set.live:hover .card[data-pos="1"]{transform:translate(36px,0) rotate(6deg)}
+.set.live:hover .card[data-pos="2"]{transform:translate(80px,6px) rotate(13deg)}
+.set .count{position:absolute;z-index:7;left:12px;top:12px;padding:.3rem .75rem;border-radius:999px;background:rgba(0,0,0,.6);color:#fff;font-size:13px;font-weight:600;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.gallery .set::after{content:"Ver carrossel";z-index:5}
+.gallery .set:hover{box-shadow:none}
+.gallery .set:hover img{transform:none}
+/* Visualizador com navegação */
+.vnav{position:fixed;top:50%;transform:translateY(-50%);border:0;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.18);color:#fff;font-size:28px;line-height:1;cursor:pointer;backdrop-filter:blur(10px);display:none;transition:background .25s,transform .25s}
+.vnav:hover{background:rgba(255,255,255,.32);transform:translateY(-50%) scale(1.08)}
+.vprev{left:1rem}.vnext{right:1rem}
+.vcount{position:fixed;bottom:calc(env(safe-area-inset-bottom,0px) + 1.2rem);left:50%;transform:translateX(-50%);color:#fff;font-size:14px;background:rgba(255,255,255,.14);padding:.35rem .9rem;border-radius:999px;display:none}
+dialog.multi .vnav,dialog.multi .vcount{display:block}
+#viewer-img{transition:opacity .2s}
+
+/* ===== Esteira contínua da Prefeitura ===== */
+.gallery.tall.belt{overflow:visible;width:max-content;gap:0;padding:1.25rem 0 1.5rem;scroll-snap-type:none;cursor:default;animation:belt var(--belt-time,110s) linear infinite}
+.gallery.tall.belt > button{margin-right:1.9rem}
+.gallery.tall.belt:hover{animation-play-state:paused}
+@keyframes belt{to{transform:translateX(-50%)}}
+.row-content:has(.belt){overflow:hidden;margin-inline:-.25rem}
+.row-content:has(.belt) .gctrl{display:none}
+@media (prefers-reduced-motion:reduce){.gallery.tall.belt{animation:none;width:auto;overflow-x:auto}}
+
+/* Esteira flutuando em ondas */
+.gallery.tall.belt{padding:3rem 0 3.5rem}
+.row.open .gallery.tall.belt.seen > button{animation:gin 1.5s cubic-bezier(.2,.8,.2,1) both,floaty 9s ease-in-out infinite;
+  animation-delay:calc(var(--i,0)*200ms + 150ms),calc(var(--i,0)*-1.15s)}
+@keyframes floaty{
+  0%{translate:0 0;rotate:-1.6deg;scale:1}
+  25%{translate:0 -22px;rotate:.4deg;scale:1.025}
+  50%{translate:0 -6px;rotate:1.8deg;scale:1}
+  75%{translate:0 18px;rotate:-.4deg;scale:.985}
+  100%{translate:0 0;rotate:-1.6deg;scale:1}}
+.gallery.tall.belt > button{filter:drop-shadow(0 24px 30px rgba(0,0,0,.12))}
+@media (prefers-reduced-motion:reduce){.row.open .gallery.tall.belt.seen > button{animation:none}}
+
+/* Bola ao lado do nome */
+.brand{display:inline-flex;align-items:center;gap:.55rem}
+#orb{width:20px;height:20px;display:block;flex:none;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.brand:hover #orb{transform:scale(1.3) rotate(20deg)}
+.brand:hover{opacity:1}
+.brand span{transition:opacity .25s}
+.brand:hover span{opacity:.65}
+
+
+
+
+/* Foto do sobre */
+.about .photo{overflow:hidden}
+.about .photo img{width:100%;height:100%;object-fit:cover;object-position:35% 50%;transition:transform 1.2s cubic-bezier(.25,.1,.25,1)}
+.about .photo:hover img{transform:scale(1.06)}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}.reveal{opacity:1;transform:none}
+}
+
+/* ===== Menos Apple: tipografia própria e cores do meio-tom ===== */
+:root{
+  --font:"Instrument Sans",system-ui,"Helvetica Neue",Arial,sans-serif;
+  --display:"Syne","Instrument Sans",system-ui,sans-serif;
+  --link:#C8007A;--btn:#D1007A;--cyan:#00ADEF;--mag:#EC008C;--yel:#FFD500;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--link:#FF5CB8;--btn:#D1007A}}
+:root[data-theme="dark"]{--link:#FF5CB8;--btn:#D1007A}
+body{letter-spacing:-.01em}
+.hero h1,h2,.about .text h3,.fact strong,.row-name,.brand span{font-family:var(--display)}
+.hero h1{font-weight:800;letter-spacing:-.05em;font-size:clamp(46px,8.6vw,118px);line-height:.95;max-width:10ch}
+h2{font-weight:700;letter-spacing:-.04em}
+.row-name{font-weight:600}
+.hero .chev{color:#C8007A}
+.nav .cta{background:var(--btn)}
+.btn:hover,.send:hover{box-shadow:0 12px 30px -10px rgba(236,0,140,.55)}
+.tile::after{background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%),rgba(236,0,140,.10),rgba(0,173,239,.08) 40%,transparent 65%)}
+.award::after{background:radial-gradient(520px circle at var(--mx,50%) var(--my,50%),rgba(236,0,140,.22),transparent 60%)}
+.row-head:hover .plus{color:var(--mag)}
+.tags li:hover{background:var(--mag)}
+.about .text strong{background-image:linear-gradient(transparent 62%,rgba(255,213,0,.55) 62%)}
+.tools b:hover{color:var(--mag)}
+.field input:focus,.field textarea:focus{border-color:var(--mag);box-shadow:0 0 0 4px rgba(236,0,140,.18)}
+.choices input:checked+label{background:var(--text);color:var(--bg)}
+.choices input:focus-visible+label,:focus-visible{outline-color:var(--mag)}
+::selection{background:var(--yel);color:#1D1D1F}
+.gallery .logo-tile{background:#000}
+.gallery .logo-tile img{object-fit:contain;padding:18%}
+.gallery .pz{background:#fff}
+.gallery .pz img{object-fit:contain;background:#fff}
+.pz-stat{display:flex;align-items:baseline;gap:.6rem;margin:0 0 1rem!important;color:var(--text)!important}
+.pz-stat strong{font-family:var(--display);font-size:clamp(30px,3.4vw,44px);font-weight:800;line-height:.9;letter-spacing:-.03em;color:#0A7F3F}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .pz-stat strong{color:#3DDC84}}
+:root[data-theme="dark"] .pz-stat strong{color:#3DDC84}
+.pz-stat span{font-size:17px;font-weight:600;color:var(--text)}
+.pz-stat{align-items:center}
+.pz-up{color:#0A7F3F;flex:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .pz-up{color:#3DDC84}}
+:root[data-theme="dark"] .pz-up{color:#3DDC84}
+.pz-stat strong{font-variant-numeric:tabular-nums;display:inline-block}
+.pz-stat.go .pz-up{animation:pzup 1.4s cubic-bezier(.2,.8,.2,1) both}
+@keyframes pzup{0%{transform:translateY(22px);opacity:0}60%{transform:translateY(-6px);opacity:1}100%{transform:none}}
+.pz-stat.done strong{animation:pzpop .5s cubic-bezier(.2,.8,.2,1)}
+@keyframes pzpop{50%{transform:scale(1.12)}}
+.pz-stat.done .pz-up{animation:pzbob 2.2s ease-in-out infinite}
+@keyframes pzbob{50%{transform:translateY(-4px)}}
+@media (prefers-reduced-motion:reduce){.pz-stat .pz-up,.pz-stat strong{animation:none!important}}
+.gallery .pz.reel{background:#000}
+.gallery .pz.reel img{object-fit:cover;background:#000}
+.gallery .pz.reel.wide img{object-fit:contain}
+.pz-views{position:absolute;z-index:3;left:10px;top:10px;display:inline-flex;align-items:center;gap:.35rem;padding:.3rem .7rem;border-radius:999px;background:rgba(0,0,0,.72);color:#fff;font-size:13px;font-weight:600;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.gallery .pz.top{outline:2px solid #0A7F3F;outline-offset:3px}
+.pz-meta{position:absolute;z-index:3;left:0;right:0;bottom:0;display:flex;flex-wrap:wrap;justify-content:center;gap:.35rem .7rem;padding:1.6rem .6rem .6rem;background:linear-gradient(transparent,rgba(0,0,0,.82) 45%);color:#fff;font-size:12px;font-weight:600;line-height:1}
+.pz-meta>span{display:inline-flex;align-items:center;gap:.25rem;white-space:nowrap}
+.gallery .pz.top::after{bottom:auto;top:10px;right:10px}
+.pz-views svg{animation:pzeye 4s ease-in-out infinite;transform-origin:center}
+@keyframes pzeye{0%,44%,52%,100%{transform:scaleY(1)}48%{transform:scaleY(.1)}}
+.pz-n{font-weight:700;font-variant-numeric:tabular-nums}
+.pz-views.counting{background:rgba(10,127,63,.9)}
+.pz-views{transition:background .6s ease,transform .4s cubic-bezier(.2,.8,.2,1)}
+.pz-views.hit{animation:pzhit .6s cubic-bezier(.2,.8,.2,1)}
+@keyframes pzhit{40%{transform:scale(1.15)}}
+@media (prefers-reduced-motion:reduce){.pz-views svg,.pz-views.hit{animation:none}}
+#eyes{width:40px;height:24px;display:block;flex:none;overflow:visible;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+#eyes .ball{fill:none;stroke:var(--text);stroke-width:1.6}
+#eyes .lid{fill:#111;transform:scaleY(0);transform-box:fill-box;transform-origin:top;transition:transform .09s ease-in}
+#eyes.blink .lid{transform:scaleY(1)}
+#eyes .iris{transition:transform .08s linear}
+.brand:hover #eyes{transform:scale(1.2) rotate(-6deg)}
+.clients{padding-block:clamp(2.5rem,5vw,4rem);border-block:1px solid var(--line);overflow:hidden}
+.clients-label{font-family:var(--font);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:center;margin:0 auto 1.6rem;max-width:none}
+.clients-label::after{display:none}
+.marquee{display:flex;width:max-content;animation:mq 55s linear infinite;-webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.clients{-webkit-mask:none}
+.marquee{-webkit-mask:none;mask:none}
+.clients .marquee-wrap{}
+.mq{display:flex;align-items:center;list-style:none;margin:0;padding:0}
+.mq li{font-family:var(--display);font-weight:700;font-size:clamp(26px,3.4vw,44px);letter-spacing:-.03em;white-space:nowrap;color:color-mix(in srgb,var(--text) 50%,transparent);transition:color .35s,transform .35s cubic-bezier(.2,.8,.2,1);display:inline-flex;align-items:center}
+.mq li::after{content:"";width:14px;height:14px;margin:0 clamp(1.4rem,3vw,2.6rem);border-radius:50%;flex:none;background:radial-gradient(circle,#EC008C 2px,transparent 2.4px) 0 0/7px 7px,radial-gradient(circle,#00ADEF 2px,transparent 2.4px) 3.5px 3.5px/7px 7px}
+.mq li:hover{color:var(--text);transform:translateY(-3px)}
+.clients:hover .marquee{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.marquee{animation:none;flex-wrap:wrap;width:auto;justify-content:center}.mq[aria-hidden]{display:none}.mq{flex-wrap:wrap;justify-content:center}}
+.top .wrap{gap:1rem}
+.avail{display:inline-flex;align-items:center;gap:.45rem;font-size:12px;font-weight:600;color:var(--text);padding:.3rem .7rem;border:1px solid var(--line);border-radius:999px;margin-left:auto;margin-right:.6rem;white-space:nowrap}
+.avail i{width:8px;height:8px;border-radius:50%;background:#1DB954;position:relative;flex:none}
+.avail i::after{content:"";position:absolute;inset:0;border-radius:50%;background:#1DB954;animation:avp 1.8s ease-out infinite}
+@keyframes avp{to{transform:scale(2.8);opacity:0}}
+@media (max-width:700px){.avail span{display:none}.avail{padding:.45rem;border:0;margin-right:0}}
+.lang{all:unset;box-sizing:border-box;display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:2px;cursor:pointer;font-size:11px;font-weight:700;letter-spacing:.04em}
+.lang span{padding:.25rem .5rem;border-radius:999px;color:var(--muted);transition:background .25s,color .25s}
+html:not([lang=en]) .lang [data-l=pt],html[lang=en] .lang [data-l=en]{background:var(--text);color:var(--bg)}
+.lang:focus-visible{outline:2px solid var(--btn);outline-offset:2px}
+@media (max-width:700px){.nav .lang{display:inline-flex}}
+html[lang=en] .gallery button::after{content:"Enlarge"}
+html[lang=en] .gallery .set::after{content:"View carousel"}
+body.swapping main,body.swapping header{transition:opacity .2s}
+.mq li.big{font-size:clamp(34px,4.6vw,60px);color:var(--text)}
+.cc-dot,.cc-ring{position:fixed;left:0;top:0;pointer-events:none;z-index:9999;border-radius:50%;opacity:0;transition:opacity .3s}
+html.cc-on .cc-dot,html.cc-on .cc-ring{opacity:1}
+.cc-dot{width:8px;height:8px;margin:-4px 0 0 -4px;background:#fff;mix-blend-mode:difference}
+.cc-ring{width:38px;height:38px;margin:-19px 0 0 -19px;display:grid;place-items:center;transition:width .35s cubic-bezier(.2,.8,.2,1),height .35s cubic-bezier(.2,.8,.2,1),margin .35s cubic-bezier(.2,.8,.2,1),opacity .3s}
+.cc-ring::before{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle,#EC008C 1.5px,transparent 1.9px) 0 0/7px 7px,radial-gradient(circle,#00ADEF 1.5px,transparent 1.9px) 3.5px 3.5px/7px 7px;-webkit-mask:radial-gradient(circle,transparent 54%,#000 56%,#000 70%,transparent 72%);mask:radial-gradient(circle,transparent 54%,#000 56%,#000 70%,transparent 72%);animation:ccspin 8s linear infinite;transition:-webkit-mask .35s,mask .35s}
+@keyframes ccspin{to{transform:rotate(360deg)}}
+.cc-ring b{position:relative;font:700 12px/1 var(--font);letter-spacing:.04em;color:#fff;opacity:0;transform:scale(.6);transition:opacity .25s,transform .35s cubic-bezier(.2,.8,.2,1)}
+html.cc-link .cc-ring{width:62px;height:62px;margin:-31px 0 0 -31px}
+html.cc-link .cc-ring::before{-webkit-mask:radial-gradient(circle,transparent 62%,#000 64%);mask:radial-gradient(circle,transparent 62%,#000 64%)}
+html.cc-view .cc-ring{width:76px;height:76px;margin:-38px 0 0 -38px}
+html.cc-view .cc-ring::before{-webkit-mask:radial-gradient(circle,#000 66%,transparent 70%);mask:radial-gradient(circle,#000 66%,transparent 70%);opacity:.75;animation-duration:3s}
+html.cc-view .cc-ring b{opacity:0}
+html.cc-view .cc-dot{opacity:1}
+html.cc-down .cc-ring{transform:scale(.8)}
+html.cc-on,html.cc-on *{cursor:none!important}
+html.cc-on input,html.cc-on textarea{cursor:text!important}
+html.cc-text .cc-ring,html.cc-text .cc-dot{opacity:0!important}
+@media (hover:none),(pointer:coarse){.cc-dot,.cc-ring{display:none}}
+#intro{display:none}
+html.intro #intro{display:grid;position:fixed;inset:0;z-index:10000;place-items:center;background:#FBFBFD;color:#1D1D1F;transition:opacity .5s ease,visibility .5s}
+html.intro.intro-out #intro{opacity:0;visibility:hidden}
+html.intro .hero .kicker,html.intro .hero h1,html.intro .hero .sub,html.intro .hero .links{animation-play-state:paused}
+.in-paint{position:absolute;inset:0;background:radial-gradient(circle,#00ADEF 2.2px,transparent 2.7px) 0 0/12px 12px,radial-gradient(circle,#EC008C 2.2px,transparent 2.7px) 4px 6px/12px 12px,radial-gradient(circle,#FFD500 2.2px,transparent 2.7px) 8px 2px/12px 12px;-webkit-mask:radial-gradient(circle at 50% 50%,#000 0,#000 var(--p,0%),transparent calc(var(--p,0%) + 18%));mask:radial-gradient(circle at 50% 50%,#000 0,#000 var(--p,0%),transparent calc(var(--p,0%) + 18%));opacity:.55}
+.in-c{position:relative;display:grid;justify-items:center;gap:1.4rem}
+.in-eyes{width:min(30vw,170px);height:auto;overflow:visible;transform:scale(.6);opacity:0;animation:inpop .5s cubic-bezier(.2,.9,.3,1.3) .05s forwards}
+@keyframes inpop{to{transform:none;opacity:1}}
+.in-lid{fill:#111;transform-box:fill-box;transform-origin:top;transform:scaleY(1);animation:inopen .22s ease-out .35s forwards}
+@keyframes inopen{to{transform:scaleY(0)}}
+.in-iris{animation:inlook .7s cubic-bezier(.4,0,.2,1) .55s forwards}
+@keyframes inlook{40%{transform:translate(-3px,1px)}100%{transform:translate(2px,3px)}}
+.in-name{margin:0;font-family:var(--display);font-weight:800;font-size:clamp(28px,5vw,56px);letter-spacing:-.04em;line-height:1;overflow:hidden;display:flex;gap:.28em}
+.in-name span{display:inline-block;transform:translateY(110%);animation:inrise .6s cubic-bezier(.2,.8,.2,1) forwards}
+.in-name span:nth-child(1){animation-delay:.5s}.in-name span:nth-child(2){animation-delay:.6s}
+@keyframes inrise{to{transform:none}}
+.bigname{position:relative;margin:2.5rem 0 1rem;user-select:none}
+#bigname{display:block;width:100%;height:clamp(70px,17vw,240px)}
+#bigname{color:var(--text)}
+.in-paint{-webkit-mask:none;mask:none;opacity:1;width:100%;height:100%;background:none}
+.in-c{z-index:1}
+.in-eyes{animation:inpop .7s cubic-bezier(.2,1.6,.4,1) .05s forwards,inwig 1.1s ease-in-out .8s 1}
+@keyframes inwig{20%{rotate:-8deg}45%{rotate:7deg}70%{rotate:-4deg}100%{rotate:0deg}}
+.in-lid{animation:inblink 1.5s linear .3s forwards}
+@keyframes inblink{0%{transform:scaleY(1)}12%{transform:scaleY(0)}52%{transform:scaleY(0)}57%{transform:scaleY(1)}63%{transform:scaleY(0)}100%{transform:scaleY(0)}}
+.in-iris{animation:inlook2 1.5s cubic-bezier(.5,0,.2,1) .45s forwards}
+@keyframes inlook2{0%{transform:none}18%{transform:translate(-3.5px,0)}36%{transform:translate(3.5px,-1px)}54%{transform:translate(1px,-3.2px)}72%{transform:translate(-2px,2.5px)}100%{transform:translate(0,2px)}}
+.in-name{gap:.3em;overflow:visible}
+.in-name .w{display:inline-flex;transform:none;animation:none}
+.in-name .w span{display:inline-block;opacity:0;transform:translateY(60%) scale(.4) rotate(-12deg);animation:inlet .55s cubic-bezier(.2,1.6,.4,1) forwards,incol .9s steps(1) forwards;animation-delay:calc(.45s + var(--d)*45ms),calc(.45s + var(--d)*45ms)}
+@keyframes inlet{to{opacity:1;transform:none}}
+@keyframes incol{0%{color:#EC008C}25%{color:#00ADEF}50%{color:#FFB800}75%{color:#1DB954}100%{color:#1D1D1F}}
+html.intro.intro-out #intro{opacity:0;visibility:hidden;transform:scale(1.08)}
+html.intro #intro{transition:opacity .55s ease,visibility .55s,transform .7s cubic-bezier(.2,.8,.2,1)}
+.in-c::before{content:"";position:absolute;inset:-60px -90px;z-index:-1;background:radial-gradient(closest-side,rgba(251,251,253,.95),rgba(251,251,253,.75) 60%,transparent)}
+.wm{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
+.wi{display:inline-block;transform:translateY(105%) rotate(4deg);opacity:0;transition:transform .9s cubic-bezier(.2,.8,.2,1),opacity .5s ease;transition-delay:calc(var(--w)*90ms + .1s)}
+h2.split.on .wi{transform:none;opacity:1}
+@media (prefers-reduced-motion:reduce){.wi{transform:none;opacity:1;transition:none}}
+@media (max-width:560px){.top .wrap{gap:.5rem;width:calc(100% - 1.5rem)}.nav{gap:.5rem}.brand{gap:.4rem;font-size:14px}#eyes{width:32px;height:20px}.avail{display:none}.nav .cta{padding:.3rem .7rem}.lang span{padding:.25rem .4rem}}
+</style>
+<script>(function(){var r=matchMedia('(prefers-reduced-motion: reduce)').matches,seen=0;try{seen=sessionStorage.getItem('intro')}catch(e){}if(!r&&!seen)document.documentElement.classList.add('intro');})();</script>
+</head>
+<body>
+
+<div id="intro" aria-hidden="true"><canvas class="in-paint"></canvas><div class="in-c"><svg class="in-eyes" viewBox="0 0 46 28"><g><circle cx="13" cy="13" r="13.1" fill="#111"/><circle cx="13" cy="13" r="10.5" fill="#fff"/><g class="in-iris"><circle cx="13" cy="13" r="6.6" fill="#F7709A"/><circle cx="13" cy="13" r="5" fill="#111"/><circle cx="15.1" cy="10.75" r="1.5" fill="#fff"/></g><circle class="in-lid" cx="13" cy="13" r="10.6"/></g><g><circle cx="33.5" cy="16.5" r="10.4" fill="#111"/><circle cx="33.5" cy="16.5" r="7.8" fill="#fff"/><g class="in-iris"><circle cx="33.5" cy="16.5" r="4.9" fill="#F7709A"/><circle cx="33.5" cy="16.5" r="3.7" fill="#111"/><circle cx="35.1" cy="14.8" r="1.1" fill="#fff"/></g><circle class="in-lid" cx="33.5" cy="16.5" r="7.9"/></g></svg><p class="in-name"><span class="w"><span style="--d:0">A</span><span style="--d:1">n</span><span style="--d:2">t</span><span style="--d:3">ô</span><span style="--d:4">n</span><span style="--d:5">i</span><span style="--d:6">o</span></span><span class="w"><span style="--d:7">M</span><span style="--d:8">e</span><span style="--d:9">n</span><span style="--d:10">e</span><span style="--d:11">g</span><span style="--d:12">h</span><span style="--d:13">e</span><span style="--d:14">t</span><span style="--d:15">t</span><span style="--d:16">i</span></span></p></div></div>
+<div class="cc-ring" aria-hidden="true"><b>Ver</b></div><div class="cc-dot" aria-hidden="true"></div>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio"><svg id="eyes" viewBox="0 0 46 28" aria-hidden="true"><g class="eye" data-cx="13" data-cy="13" data-r="3.6"><circle cx="13" cy="13" r="13.1" fill="#111"/><g><circle cx="13" cy="13" r="10.5" fill="#fff"/><g class="iris"><circle cx="13" cy="13" r="6.6" fill="#F7709A"/><circle cx="13" cy="13" r="5" fill="#111"/><circle cx="15.1" cy="10.75" r="1.5" fill="#fff"/></g><circle class="lid" cx="13" cy="13" r="10.6"/></g></g><g class="eye" data-cx="33.5" data-cy="16.5" data-r="2.6"><circle cx="33.5" cy="16.5" r="10.4" fill="#111"/><g><circle cx="33.5" cy="16.5" r="7.8" fill="#fff"/><g class="iris"><circle cx="33.5" cy="16.5" r="4.9" fill="#F7709A"/><circle cx="33.5" cy="16.5" r="3.7" fill="#111"/><circle cx="35.054" cy="14.835" r="1.1" fill="#fff"/></g><circle class="lid" cx="33.5" cy="16.5" r="7.9"/></g></g></svg><span>Antônio Meneghetti</span></a>
+    <span class="avail"><i aria-hidden="true"></i><span>Disponível para projetos</span></span>
+    <nav class="nav" aria-label="Principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#trabalhos">Trabalhos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#experiencia">Experiência</a>
+      <a class="cta" href="#contato">Contato</a>
+      <button class="lang" id="lang" type="button" aria-label="Switch to English"><span data-l="pt">PT</span><span data-l="en">EN</span></button>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <div class="hero">
+    <canvas id="halftone" aria-hidden="true"></canvas>
+    <div class="hero-in wrap">
+      <p class="kicker">Antônio Meneghetti, designer e diretor de arte</p>
+      <h1>Design que comunica.</h1>
+      <p class="sub">Da identidade visual ao anúncio que vende, com a ideia e a peça final no mesmo lugar.</p>
+      <div class="links">
+        <a class="btn" href="#trabalhos">Ver trabalhos</a>
+        <a class="chev" href="#contato">Fale comigo</a>
+      </div>
+    </div>
+    <p class="hint wrap">Passe o mouse para misturar as cores</p>
+  </div>
+
+  <section class="wide" id="sobre" aria-labelledby="t-sobre">
+    <div class="head reveal wrap">
+      <h2 id="t-sobre">Sobre mim.</h2>
+      <p>Onde design, marketing e estratégia se encontram.</p>
+    </div>
+    <div class="about">
+      <div class="tile photo reveal"><img src="img/53d2685d71.webp" alt="Antônio Meneghetti na formatura da PUCRS" loading="lazy"></div>
+
+      <div class="tile text reveal">
+        <h3>Oi, eu sou o Antônio.</h3>
+        <p>Comecei como freelancer em 2017 e, desde então, passei por estúdio, agências, educação e governo. Liderei equipes como <strong>designer chefe</strong>, fui o único designer de uma escola inteira e hoje assino a <strong>direção de arte da comunicação de Porto Alegre</strong>.</p>
+        <p>O contato constante com marcas, startups e projetos reais me levou além do design, para dentro do marketing e da publicidade: narrativa, posicionamento, ganchos de venda e performance de campanha.</p>
+      </div>
+      <div class="facts">
+        <div class="tile fact reveal"><strong>Design de Produto</strong><span>PUCRS, concluído em 2025</span></div>
+        <div class="tile fact reveal"><strong>Fluência nativa em inglês</strong><span>Certificado Cambridge English First</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="trabalhos" aria-labelledby="t-trab">
+    <div class="head reveal">
+      <h2 id="t-trab">Trabalhos selecionados.</h2>
+      <p>Toque em um projeto para ver as peças.</p>
+    </div>
+    <div class="acc reveal">
+      <article class="row proj open">
+        <button class="row-head" aria-expanded="true" aria-controls="w0"><span class="row-name">Prefeitura de Porto Alegre<small>Direção de arte e campanhas</small></span><span class="row-year">2026</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="row-body" id="w0"><div class="row-inner"><div class="row-content"><p>Direção de arte da comunicação oficial da cidade: serviços do 156, educação, limpeza urbana, praças, acesso à informação e datas importantes de Porto Alegre. Uma linguagem consistente para falar com mais de um milhão de pessoas.</p><div class="gallery tall"><button class="post set" style="--i:0" aria-label="Ver carrossel: Castração gratuita pelo 156, 8 artes"><span class="card" data-pos="0" style="--d:0"><img src="img/7bffa1c7c1.webp" alt="Castração gratuita pelo 156, arte 1 de 8" loading="lazy" decoding="async"></span><span class="card" data-pos="1" style="--d:1"><img src="img/8d73cd25f8.webp" alt="Castração gratuita pelo 156, arte 2 de 8" loading="lazy" decoding="async"></span><span class="card" data-pos="2" style="--d:2"><img src="img/e5bcfedb52.webp" alt="Castração gratuita pelo 156, arte 3 de 8" loading="lazy" decoding="async"></span><span class="card" data-pos="3" style="--d:3"><img src="img/193ea8dabb.webp" alt="Castração gratuita pelo 156, arte 4 de 8" loading="lazy" decoding="async"></span><span class="card" data-pos="3" style="--d:4"><img src="img/68943b0049.webp" alt="Castração gratuita pelo 156, arte 5 de 8" loading="lazy" decoding="async"></span><span class="card" data-pos="3" style="--d:5"><img src="img/7fc2fb7605.webp" alt="Castração gratuita pelo 156, arte 6 de 8" loading="lazy" decoding="async"></span><span class="card" data-pos="3" style="--d:6"><img src="img/7bd8ecf248.webp" alt="Castração gratuita pelo 156, arte 7 de 8" loading="lazy" decoding="async"></span><span class="card" data-pos="3" style="--d:7"><img src="img/68cc7f8514.webp" alt="Castração gratuita pelo 156, arte 8 de 8" loading="lazy" decoding="async"></span><span class="count"><b>1</b> de 8</span></button><button class="post" style="--i:1" aria-label="Ampliar: Pedro e o Lobo (Guará), Concertos Capitólio"><img src="img/390ed1c383.webp" alt="Pedro e o Lobo (Guará), Concertos Capitólio" loading="lazy" decoding="async"></button><button class="post set" style="--i:2" aria-label="Ver carrossel: Processo seletivo para professores, 4 artes"><span class="card" data-pos="0" style="--d:0"><img src="img/b02e403ec6.webp" alt="Processo seletivo para professores, arte 1 de 4" loading="lazy" decoding="async"></span><span class="card" data-pos="1" style="--d:1"><img src="img/611aa1bf08.webp" alt="Processo seletivo para professores, arte 2 de 4" loading="lazy" decoding="async"></span><span class="card" data-pos="2" style="--d:2"><img src="img/204731e3ac.webp" alt="Processo seletivo para professores, arte 3 de 4" loading="lazy" decoding="async"></span><span class="card" data-pos="3" style="--d:3"><img src="img/3ccaab94b9.webp" alt="Processo seletivo para professores, arte 4 de 4" loading="lazy" decoding="async"></span><span class="count"><b>1</b> de 4</span></button><button class="post set" style="--i:3" aria-label="Ver carrossel: Onde descartar cada tipo de resíduo, 2 artes"><span class="card" data-pos="0" style="--d:0"><img src="img/cdcd82974e.webp" alt="Onde descartar cada tipo de resíduo, arte 1 de 2" loading="lazy" decoding="async"></span><span class="card" data-pos="1" style="--d:1"><img src="img/1d9e6a46e8.webp" alt="Onde descartar cada tipo de resíduo, arte 2 de 2" loading="lazy" decoding="async"></span><span class="count"><b>1</b> de 2</span></button><button class="post" style="--i:4" aria-label="Ampliar: Onde descartar cada tipo de resíduo, capa azul"><img src="img/e544f1e6b4.webp" alt="Onde descartar cada tipo de resíduo, capa azul" loading="lazy" decoding="async"></button><button class="post" style="--i:5" aria-label="Ampliar: 200 praças requalificadas"><img src="img/94c81e28c2.webp" alt="200 praças requalificadas" loading="lazy" decoding="async"></button><button class="post set" style="--i:6" aria-label="Ver carrossel: Direito à informação, 3 artes"><span class="card" data-pos="0" style="--d:0"><img src="img/94d947562b.webp" alt="Direito à informação, arte 1 de 3" loading="lazy" decoding="async"></span><span class="card" data-pos="1" style="--d:1"><img src="img/70a34efe11.webp" alt="Direito à informação, arte 2 de 3" loading="lazy" decoding="async"></span><span class="card" data-pos="2" style="--d:2"><img src="img/beb8ee60cc.webp" alt="Direito à informação, arte 3 de 3" loading="lazy" decoding="async"></span><span class="count"><b>1</b> de 3</span></button><button class="post" style="--i:7" aria-label="Ampliar: 123 anos do Grêmio"><img src="img/00d9a1998f.webp" alt="123 anos do Grêmio" loading="lazy" decoding="async"></button><button class="post" style="--i:8" aria-label="Ampliar: Dia do Patrimônio Histórico e Cultural"><img src="img/78f94d16d5.webp" alt="Dia do Patrimônio Histórico e Cultural" loading="lazy" decoding="async"></button></div><div class="gctrl"><div class="gbar"><span></span></div><button class="gprev" aria-label="Peça anterior">‹</button><button class="gnext" aria-label="Próxima peça">›</button></div></div></div></div>
+      </article>
+      <article class="row proj">
+        <button class="row-head" aria-expanded="false" aria-controls="wp"><span class="row-name">Plagio.zip<small>Projeto conceitual e autoral · +250K views mensais</small></span><span class="row-year">2026</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="row-body" id="wp"><div class="row-inner"><div class="row-content"><p class="pz-stat"><svg class="pz-up" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M5 15l7-7 7 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><strong data-to="250" aria-label="mais de 250 mil">+250K</strong><span>views mensais</span></p><p>Projeto conceitual e autoral baseado em Porto Alegre, movido pela divulgação e colaboração em eventos na cidade. <a href="https://www.instagram.com/plagio.zip/" target="_blank" rel="noopener">@plagio.zip</a></p><div class="gallery tall"><button class="post pz top reel" style="--i:0" aria-label="Ampliar: Reel no consultório do dentista, 671 mil visualizações"><img src="img/37f053bc06.webp" alt="Reel no consultório do dentista" loading="lazy" decoding="async"><span class="pz-views"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg><b class="pz-n" data-v="671 mil">671 mil</b></span><span class="pz-meta"><span title="49,9 mil curtidas"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>49,9 mil<span class="sr"> curtidas</span></span><span title="520 comentários"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a8 8 0 0 1-11.6 7.1L4 20l1.4-4.2A8 8 0 1 1 20 11.5z"/></svg>520<span class="sr"> comentários</span></span><span title="2.324 reposts"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l3 3-3 3M4 11V9a4 4 0 0 1 4-4h12M7 22l-3-3 3-3M20 13v2a4 4 0 0 1-4 4H4"/></svg>2.324<span class="sr"> reposts</span></span><span title="20,5 mil compartilhamentos"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 3L2 10l8 3 3 8 9-18zM10 13l6-6"/></svg>20,5 mil<span class="sr"> compartilhamentos</span></span><span title="1.947 salvos"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z"/></svg>1.947<span class="sr"> salvos</span></span></span></button><button class="post pz top reel wide" style="--i:1" aria-label="Ampliar: Reel Okie News, Breaking News, 347 mil visualizações"><img src="img/079b15a241.webp" alt="Reel Okie News, Breaking News" loading="lazy" decoding="async"><span class="pz-views"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg><b class="pz-n" data-v="347 mil">347 mil</b></span><span class="pz-meta"><span title="28,6 mil curtidas"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>28,6 mil<span class="sr"> curtidas</span></span><span title="419 comentários"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a8 8 0 0 1-11.6 7.1L4 20l1.4-4.2A8 8 0 1 1 20 11.5z"/></svg>419<span class="sr"> comentários</span></span><span title="1.842 reposts"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l3 3-3 3M4 11V9a4 4 0 0 1 4-4h12M7 22l-3-3 3-3M20 13v2a4 4 0 0 1-4 4H4"/></svg>1.842<span class="sr"> reposts</span></span><span title="14,8 mil compartilhamentos"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 3L2 10l8 3 3 8 9-18zM10 13l6-6"/></svg>14,8 mil<span class="sr"> compartilhamentos</span></span><span title="2.198 salvos"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z"/></svg>2.198<span class="sr"> salvos</span></span></span></button><button class="post pz top post" style="--i:2" aria-label="Ampliar: Post Matuê e Aphex Twin, 158 mil visualizações"><img src="img/350ec8da26.webp" alt="Post Matuê e Aphex Twin" loading="lazy" decoding="async"><span class="pz-views"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg><b class="pz-n" data-v="158 mil">158 mil</b></span><span class="pz-meta"><span title="531 curtidas"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>531<span class="sr"> curtidas</span></span><span title="9 comentários"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a8 8 0 0 1-11.6 7.1L4 20l1.4-4.2A8 8 0 1 1 20 11.5z"/></svg>9<span class="sr"> comentários</span></span><span title="13 reposts"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l3 3-3 3M4 11V9a4 4 0 0 1 4-4h12M7 22l-3-3 3-3M20 13v2a4 4 0 0 1-4 4H4"/></svg>13<span class="sr"> reposts</span></span><span title="29 compartilhamentos"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 3L2 10l8 3 3 8 9-18zM10 13l6-6"/></svg>29<span class="sr"> compartilhamentos</span></span></span></button><button class="post pz top post" style="--i:3" aria-label="Ampliar: Post On The Radar Brasil, 10,3 mil visualizações"><img src="img/675fe3c154.webp" alt="Post On The Radar Brasil" loading="lazy" decoding="async"><span class="pz-views"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg><b class="pz-n" data-v="10,3 mil">10,3 mil</b></span><span class="pz-meta"><span title="191 curtidas"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>191<span class="sr"> curtidas</span></span><span title="28 comentários"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a8 8 0 0 1-11.6 7.1L4 20l1.4-4.2A8 8 0 1 1 20 11.5z"/></svg>28<span class="sr"> comentários</span></span><span title="7 reposts"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l3 3-3 3M4 11V9a4 4 0 0 1 4-4h12M7 22l-3-3 3-3M20 13v2a4 4 0 0 1-4 4H4"/></svg>7<span class="sr"> reposts</span></span><span title="42 compartilhamentos"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 3L2 10l8 3 3 8 9-18zM10 13l6-6"/></svg>42<span class="sr"> compartilhamentos</span></span></span></button><button class="post pz top post" style="--i:4" aria-label="Ampliar: Post Matuê x Michèle Lamy na Paris Fashion Week, 6,6 mil visualizações"><img src="img/b7cd8db5b2.webp" alt="Post Matuê x Michèle Lamy na Paris Fashion Week" loading="lazy" decoding="async"><span class="pz-views"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg><b class="pz-n" data-v="6,6 mil">6,6 mil</b></span><span class="pz-meta"><span title="442 curtidas"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>442<span class="sr"> curtidas</span></span><span title="30 comentários"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a8 8 0 0 1-11.6 7.1L4 20l1.4-4.2A8 8 0 1 1 20 11.5z"/></svg>30<span class="sr"> comentários</span></span><span title="28 reposts"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l3 3-3 3M4 11V9a4 4 0 0 1 4-4h12M7 22l-3-3 3-3M20 13v2a4 4 0 0 1-4 4H4"/></svg>28<span class="sr"> reposts</span></span><span title="23 compartilhamentos"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 3L2 10l8 3 3 8 9-18zM10 13l6-6"/></svg>23<span class="sr"> compartilhamentos</span></span></span></button><button class="post pz" style="--i:5" aria-label="Ampliar post 1 do Plagio.zip"><img src="img/0538c84000.webp" alt="Post 1 do Plagio.zip" loading="lazy" decoding="async"></button><button class="post pz" style="--i:6" aria-label="Ampliar post 2 do Plagio.zip"><img src="img/0cb0007df9.webp" alt="Post 2 do Plagio.zip" loading="lazy" decoding="async"></button><button class="post pz" style="--i:7" aria-label="Ampliar post 3 do Plagio.zip"><img src="img/f556efbf4a.webp" alt="Post 3 do Plagio.zip" loading="lazy" decoding="async"></button><button class="post pz" style="--i:8" aria-label="Ampliar post 4 do Plagio.zip"><img src="img/130e40c402.webp" alt="Post 4 do Plagio.zip" loading="lazy" decoding="async"></button><button class="post pz" style="--i:9" aria-label="Ampliar post 5 do Plagio.zip"><img src="img/0decfd3d50.webp" alt="Post 5 do Plagio.zip" loading="lazy" decoding="async"></button><button class="post pz" style="--i:10" aria-label="Ampliar post 6 do Plagio.zip"><img src="img/9e26ed9ed8.webp" alt="Post 6 do Plagio.zip" loading="lazy" decoding="async"></button><button class="post pz" style="--i:11" aria-label="Ampliar post 7 do Plagio.zip"><img src="img/ddf3a13b8d.webp" alt="Post 7 do Plagio.zip" loading="lazy" decoding="async"></button><button class="post pz" style="--i:12" aria-label="Ampliar post 8 do Plagio.zip"><img src="img/a5a02b679c.webp" alt="Post 8 do Plagio.zip" loading="lazy" decoding="async"></button><button class="post pz" style="--i:13" aria-label="Ampliar post 9 do Plagio.zip"><img src="img/dde768028b.webp" alt="Post 9 do Plagio.zip" loading="lazy" decoding="async"></button><button class="post pz" style="--i:14" aria-label="Ampliar post 10 do Plagio.zip"><img src="img/5e7298f2ef.webp" alt="Post 10 do Plagio.zip" loading="lazy" decoding="async"></button><button class="post pz" style="--i:15" aria-label="Ampliar post 11 do Plagio.zip"><img src="img/dab48d5f95.webp" alt="Post 11 do Plagio.zip" loading="lazy" decoding="async"></button><button class="post pz" style="--i:16" aria-label="Ampliar post 12 do Plagio.zip"><img src="img/65bac2f7a1.webp" alt="Post 12 do Plagio.zip" loading="lazy" decoding="async"></button><button class="post pz" style="--i:17" aria-label="Ampliar post 13 do Plagio.zip"><img src="img/e3b33a32e8.webp" alt="Post 13 do Plagio.zip" loading="lazy" decoding="async"></button><button class="post pz" style="--i:18" aria-label="Ampliar post 14 do Plagio.zip"><img src="img/3aea6c611d.webp" alt="Post 14 do Plagio.zip" loading="lazy" decoding="async"></button><button class="post pz" style="--i:19" aria-label="Ampliar post 15 do Plagio.zip"><img src="img/90620ede63.webp" alt="Post 15 do Plagio.zip" loading="lazy" decoding="async"></button><button class="post pz" style="--i:20" aria-label="Ampliar post 16 do Plagio.zip"><img src="img/d7a40e695e.webp" alt="Post 16 do Plagio.zip" loading="lazy" decoding="async"></button><button class="post pz" style="--i:21" aria-label="Ampliar post 17 do Plagio.zip"><img src="img/22d5508f1d.webp" alt="Post 17 do Plagio.zip" loading="lazy" decoding="async"></button><button class="post pz" style="--i:22" aria-label="Ampliar post 18 do Plagio.zip"><img src="img/7c63abfe37.webp" alt="Post 18 do Plagio.zip" loading="lazy" decoding="async"></button><button class="post pz" style="--i:23" aria-label="Ampliar post 19 do Plagio.zip"><img src="img/c64011f957.webp" alt="Post 19 do Plagio.zip" loading="lazy" decoding="async"></button><button class="post pz" style="--i:24" aria-label="Ampliar post 20 do Plagio.zip"><img src="img/c31543c4aa.webp" alt="Post 20 do Plagio.zip" loading="lazy" decoding="async"></button></div><div class="gctrl"><div class="gbar"><span></span></div><button class="gprev" aria-label="Peça anterior">‹</button><button class="gnext" aria-label="Próxima peça">›</button></div></div></div></div>
+      </article>
+      <article class="row proj">
+        <button class="row-head" aria-expanded="false" aria-controls="w1"><span class="row-name">Museu do Inter e Museu do Grêmio<small>Campanha com a Prefeitura</small></span><span class="row-year">2026</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="row-body" id="w1"><div class="row-inner"><div class="row-content"><p>Campanha de divulgação dos museus dos dois clubes da cidade, feita em parceria com a Prefeitura. O desafio foi dar a cada um a própria personalidade sem quebrar a linguagem da campanha.</p><div class="gallery"><button style="--i:0" aria-label="Ampliar peça 1 de Museu do Inter e Museu do Grêmio"><img src="img/62eb568f37.webp" alt="Peça 1 do projeto Museu do Inter e Museu do Grêmio" loading="lazy" decoding="async"></button><button style="--i:1" aria-label="Ampliar peça 2 de Museu do Inter e Museu do Grêmio"><img src="img/721e599824.webp" alt="Peça 2 do projeto Museu do Inter e Museu do Grêmio" loading="lazy" decoding="async"></button></div><div class="gctrl"><div class="gbar"><span></span></div><button class="gprev" aria-label="Peça anterior">‹</button><button class="gnext" aria-label="Próxima peça">›</button></div></div></div></div>
+      </article>
+      <article class="row proj">
+        <button class="row-head" aria-expanded="false" aria-controls="w2"><span class="row-name">Olympikus e Maratona Internacional de Porto Alegre<small>Campanha de evento</small></span><span class="row-year">2026</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="row-body" id="w2"><div class="row-inner"><div class="row-content"><p>Peças da reta final de inscrições da Maratona Internacional de Porto Alegre, em parceria com a Olympikus.</p><div class="gallery"><button style="--i:0" aria-label="Ampliar peça 1 de Olympikus e Maratona Internacional de Porto Alegre"><img src="img/8df309b71d.webp" alt="Peça 1 do projeto Olympikus e Maratona Internacional de Porto Alegre" loading="lazy" decoding="async"></button></div></div></div></div>
+      </article>
+      <article class="row proj">
+        <button class="row-head" aria-expanded="false" aria-controls="w3"><span class="row-name">Claire Fancin Cosméticos<small>Arte criativa e embalagem</small></span><span class="row-year">2021</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="row-body" id="w3"><div class="row-inner"><div class="row-content"><p>Identidade e aplicações para uma linha de cosméticos, das embalagens às peças de divulgação.</p><div class="gallery"><button style="--i:0" aria-label="Ampliar peça 1 de Claire Fancin Cosméticos"><img src="img/360e709719.webp" alt="Peça 1 do projeto Claire Fancin Cosméticos" loading="lazy" decoding="async"></button><button style="--i:1" aria-label="Ampliar peça 2 de Claire Fancin Cosméticos"><img src="img/c5b46c9f8b.webp" alt="Peça 2 do projeto Claire Fancin Cosméticos" loading="lazy" decoding="async"></button></div><div class="gctrl"><div class="gbar"><span></span></div><button class="gprev" aria-label="Peça anterior">‹</button><button class="gnext" aria-label="Próxima peça">›</button></div></div></div></div>
+      </article>
+      <article class="row proj">
+        <button class="row-head" aria-expanded="false" aria-controls="w4"><span class="row-name">Pro Mais Vans<small>Social media</small></span><span class="row-year">2022</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="row-body" id="w4"><div class="row-inner"><div class="row-content"><p>Conteúdo e anúncios para uma empresa especializada em vans e utilitários, com foco em serviço, confiança e conversão.</p><div class="gallery"><button style="--i:0" aria-label="Ampliar peça 1 de Pro Mais Vans"><img src="img/ed0a77adcd.webp" alt="Peça 1 do projeto Pro Mais Vans" loading="lazy" decoding="async"></button><button style="--i:1" aria-label="Ampliar peça 2 de Pro Mais Vans"><img src="img/f3770e6c6f.webp" alt="Peça 2 do projeto Pro Mais Vans" loading="lazy" decoding="async"></button></div><div class="gctrl"><div class="gbar"><span></span></div><button class="gprev" aria-label="Peça anterior">‹</button><button class="gnext" aria-label="Próxima peça">›</button></div></div></div></div>
+      </article>
+      <article class="row proj">
+        <button class="row-head" aria-expanded="false" aria-controls="w5"><span class="row-name">BTE Grupo<small>Social media e copy</small></span><span class="row-year">2022</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="row-body" id="w5"><div class="row-inner"><div class="row-content"><p>Carrosséis e posts de conteúdo sobre negócios e marketing, com ganchos fortes para parar a rolagem.</p><div class="gallery"><button style="--i:0" aria-label="Ampliar peça 1 de BTE Grupo"><img src="img/95a58a45d5.webp" alt="Peça 1 do projeto BTE Grupo" loading="lazy" decoding="async"></button><button style="--i:1" aria-label="Ampliar peça 2 de BTE Grupo"><img src="img/7b419cae91.webp" alt="Peça 2 do projeto BTE Grupo" loading="lazy" decoding="async"></button></div><div class="gctrl"><div class="gbar"><span></span></div><button class="gprev" aria-label="Peça anterior">‹</button><button class="gnext" aria-label="Próxima peça">›</button></div></div></div></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="clients" aria-labelledby="t-clientes">
+    <h2 id="t-clientes" class="clients-label">Marcas e instituições com quem já trabalhei</h2>
+    <div class="marquee"><ul class="mq"><li class="big">RenauxView</li><li>Prefeitura de Porto Alegre</li><li>Olympikus</li><li>156 Porto Alegre</li><li>Museu do Inter</li><li>Museu do Grêmio</li><li>Maratona Internacional de Porto Alegre</li><li>Cultura DAB</li><li>BrainWeek</li><li>Câmara Municipal de Porto Alegre</li><li>Plagio.zip</li><li>Claire Fancin Cosméticos</li><li>Pro Mais Vans</li><li>BTE Grupo</li><li>All Education</li><li>Schaeffer Digital</li><li>Modulo Marketing</li><li>Nave Comunica</li><li>2700 studios</li></ul><ul class="mq" aria-hidden="true"><li class="big">RenauxView</li><li>Prefeitura de Porto Alegre</li><li>Olympikus</li><li>156 Porto Alegre</li><li>Museu do Inter</li><li>Museu do Grêmio</li><li>Maratona Internacional de Porto Alegre</li><li>Cultura DAB</li><li>BrainWeek</li><li>Câmara Municipal de Porto Alegre</li><li>Plagio.zip</li><li>Claire Fancin Cosméticos</li><li>Pro Mais Vans</li><li>BTE Grupo</li><li>All Education</li><li>Schaeffer Digital</li><li>Modulo Marketing</li><li>Nave Comunica</li><li>2700 studios</li></ul></div>
+  </section>
+
+  <section class="wide" id="servicos" aria-labelledby="t-servicos">
+    <div class="head reveal wrap">
+      <h2 id="t-servicos">O que eu faço.</h2>
+      <p>Cada peça existe para informar, engajar ou vender. E a marca sai mais forte no final.</p>
+    </div>
+    <div class="svc reveal">
+      <div class="tile"><span>Direção de arte</span></div>
+      <div class="tile"><span>Design gráfico</span></div>
+      <div class="tile"><span>Identidade visual e branding</span></div>
+      <div class="tile"><span>Social media</span></div>
+      <div class="tile"><span>Campanhas e anúncios</span></div>
+      <div class="tile"><span>Copywriting estratégico</span></div>
+      <div class="tile"><span>Vídeos, reels e VSL</span></div>
+      <div class="tile"><span>UX design</span></div>
+      <div class="tile"><span>Design de embalagem</span></div>
+      <div class="tile"><span>Design gastronômico</span></div>
+    </div>
+    <p class="tools reveal">Feito com <b>Illustrator</b>, <b>Photoshop</b>, <b>Cinema 4D</b>, <b>Canva</b>, <b>AutoCAD 3D</b> e <b>Autodesk</b>.</p>
+  </section>
+
+  <section class="wrap" id="experiencia" aria-labelledby="t-exp">
+    <div class="head reveal">
+      <h2 id="t-exp">Experiência.</h2>
+      <p>Desde 2017, entre estúdio, agência, educação e governo.</p>
+    </div>
+    <div class="acc reveal">
+      <article class="row">
+        <button class="row-head" aria-expanded="false" aria-controls="j0"><span class="row-name">Prefeitura de Porto Alegre<small>Diretor de arte e designer</small></span><span class="row-year">2026</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="row-body" id="j0"><div class="row-inner"><div class="row-content"><p>No Gabinete de Comunicação Social, liderei a execução da comunicação visual da cidade. O trabalho recebeu um prêmio nacional na categoria Identidade.</p><ul class="tags"><li>Comunicação criativa</li><li>Direcionamento estratégico</li><li>Design gráfico estratégico</li><li>Branding de longo prazo</li></ul></div></div></div>
+      </article>
+      <article class="row">
+        <button class="row-head" aria-expanded="false" aria-controls="j1"><span class="row-name">Câmara Municipal de Porto Alegre<small>Assessor de comunicação parlamentar e produtor de conteúdo político</small></span><span class="row-year">2026</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="row-body" id="j1"><div class="row-inner"><div class="row-content"><p>No gabinete de vereadores, conduzi a comunicação política direta: relacionamento, gestão de crise, design, captação em agenda e edição de vídeo. Vivi uma campanha política completa, do planejamento à rua.</p><ul class="tags"><li>Estratégia de comunicação</li><li>Captação e edição de vídeo</li><li>Relacionamento</li><li>Design gráfico</li></ul></div></div></div>
+      </article>
+      <article class="row">
+        <button class="row-head" aria-expanded="false" aria-controls="j2"><span class="row-name">All Education<small>Designer</small></span><span class="row-year">2025–2026</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="row-body" id="j2"><div class="row-inner"><div class="row-content"><p>Único designer da empresa, responsável pela estratégia e execução da comunicação visual. Criei narrativas, posicionamento e ganchos para lives de lançamento, e cuidei de toda a identidade, anúncios e captação da escola botânica @elmundodemusgo.</p><ul class="tags"><li>Copywriting</li><li>Captação de anúncios</li><li>Edição de VSL</li><li>Automação de comunicação</li></ul></div></div></div>
+      </article>
+      <article class="row">
+        <button class="row-head" aria-expanded="false" aria-controls="j3"><span class="row-name">Schaeffer Digital<small>Designer chefe</small></span><span class="row-year">2023–2025</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="row-body" id="j3"><div class="row-inner"><div class="row-content"><p>Papel estratégico entre design, direção criativa e gestão de projetos. Conduzi projetos de grande porte do planejamento à entrega final, incluindo marcas como a RenauxView, maior empresa do setor.</p><ul class="tags"><li>Gestão de projetos</li><li>Direção criativa</li><li>Liderança de equipe</li></ul></div></div></div>
+      </article>
+      <article class="row">
+        <button class="row-head" aria-expanded="false" aria-controls="j4"><span class="row-name">Modulo Marketing<small>Social media</small></span><span class="row-year">2023</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="row-body" id="j4"><div class="row-inner"><div class="row-content"><p>Planejamento e criação de conteúdo para redes sociais de clientes da agência.</p><ul class="tags"><li>Social media</li></ul></div></div></div>
+      </article>
+      <article class="row">
+        <button class="row-head" aria-expanded="false" aria-controls="j5"><span class="row-name">Nave Comunica<small>Designer gráfico</small></span><span class="row-year">2022–2023</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="row-body" id="j5"><div class="row-inner"><div class="row-content"><p>Criação de peças gráficas e digitais para clientes da agência.</p><ul class="tags"><li>Design gráfico</li></ul></div></div></div>
+      </article>
+      <article class="row">
+        <button class="row-head" aria-expanded="false" aria-controls="j6"><span class="row-name">2700 studios<small>Designer freelancer</small></span><span class="row-year">2017–2023</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="row-body" id="j6"><div class="row-inner"><div class="row-content"><p>Seis anos atendendo marcas e projetos como freelancer, onde construí a base de design gráfico, embalagem e social media.</p><ul class="tags"><li>Design gráfico</li><li>Embalagem</li><li>Social media</li></ul></div></div></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="wide" aria-labelledby="t-premio">
+    <div class="award reveal">
+      <p class="label">Prêmio nacional, 2026</p>
+      <h2 id="t-premio">Categoria Identidade, Social MediaGov.</h2>
+      <p>Com a Prefeitura de Porto Alegre, ajudei a construir uma comunicação estruturada para a cidade inteira. O trabalho foi reconhecido nacionalmente.</p>
+      <img src="img/96627f251b.webp" alt="Equipe da Prefeitura de Porto Alegre no palco do Social MediaGov, segurando os prêmios da categoria Identidade" loading="lazy">
+    </div>
+  </section>
+
+  <section class="wide contact" id="contato" aria-labelledby="t-contato">
+    <div class="tile reveal">
+      <div class="head">
+        <h2 id="t-contato">Vamos criar algo juntos.</h2>
+        <p>Me conta do seu projeto. Ou escreva direto para <a href="mailto:meneghettitom@gmail.com">meneghettitom@gmail.com</a>.</p>
+      </div>
+      <form id="form" novalidate>
+        <fieldset>
+          <legend>Do que você precisa?</legend>
+          <div class="choices">
+            <input type="radio" name="tipo" id="c1" value="Identidade visual" checked><label for="c1">Identidade visual</label>
+            <input type="radio" name="tipo" id="c2" value="Social media"><label for="c2">Social media</label>
+            <input type="radio" name="tipo" id="c3" value="Campanha e anúncios"><label for="c3">Campanha e anúncios</label>
+            <input type="radio" name="tipo" id="c4" value="Outro"><label for="c4">Outro</label>
+          </div>
+        </fieldset>
+        <div class="fields">
+          <div class="field"><label class="sr" for="nome">Seu nome</label><input id="nome" name="nome" placeholder="Seu nome" autocomplete="name"></div>
+          <div class="field"><label class="sr" for="email">Seu e-mail</label><input id="email" name="email" type="email" placeholder="Seu e-mail" autocomplete="email"></div>
+          <div class="field full"><label class="sr" for="msg">Sobre o projeto</label><textarea id="msg" name="msg" rows="4" placeholder="Sobre o projeto"></textarea></div>
+        </div>
+        <button class="send" type="submit">Enviar mensagem</button>
+        <p class="form-msg" id="form-msg" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div><h3>Navegar</h3><ul><li><a href="#sobre">Sobre</a></li><li><a href="#trabalhos">Trabalhos</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#experiencia">Experiência</a></li></ul></div>
+      <div><h3>Redes</h3><ul><li><a href="https://instagram.com/meneghettiii" target="_blank" rel="noopener">Instagram @meneghettiii</a></li></ul></div>
+      <div><h3>Contato</h3><ul><li><a href="mailto:meneghettitom@gmail.com">meneghettitom@gmail.com</a></li></ul></div>
+      <div><h3>Onde</h3><ul><li>Porto Alegre, RS</li><li>Projetos para qualquer lugar</li></ul></div>
+    </div>
+    <div class="bigname"><canvas id="bigname" aria-hidden="true"></canvas><p class="sr">Antônio Meneghetti</p></div>
+    <p class="copy">Copyright © 2026 Antônio Meneghetti. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<div class="peek" id="peek" aria-hidden="true"><img alt=""></div>
+
+<dialog id="viewer" aria-label="Imagem ampliada">
+  <button class="close" id="close">Fechar</button>
+  <button class="vnav vprev" id="vprev" aria-label="Arte anterior">‹</button>
+  <img id="viewer-img" alt="">
+  <button class="vnav vnext" id="vnext" aria-label="Próxima arte">›</button>
+  <p class="vcount" id="vcount"></p>
+</dialog>
+
+<script>
+/* Esteira: duplica as peças para a galeria da Prefeitura passar sem fim */
+document.querySelectorAll('.gallery.tall').forEach(g=>{
+  const items=[...g.children];
+  items.forEach(it=>{const c=it.cloneNode(true);c.setAttribute('aria-hidden','true');c.tabIndex=-1;g.appendChild(c);});
+  g.classList.add('belt');
+  g.style.setProperty('--belt-time',(items.length*9)+'s');
+});
+document.querySelectorAll('.row-head').forEach(b=>{
+  b.addEventListener('click',()=>{const r=b.closest('.row');const o=r.classList.toggle('open');b.setAttribute('aria-expanded',o);});
+});
+const dlg=document.getElementById('viewer'),vimg=document.getElementById('viewer-img');
+let vset=[],vi=0;
+function vshow(){const i=vset[vi];vimg.style.opacity=0;setTimeout(()=>{vimg.src=i.src;vimg.alt=i.alt;vimg.style.opacity=1;},120);document.getElementById('vcount').textContent=(vi+1)+' de '+vset.length;}
+document.querySelectorAll('.gallery > button').forEach(b=>{
+  b.addEventListener('click',()=>{vset=[...b.querySelectorAll('img')];vi=+(b.dataset.cur||0);dlg.classList.toggle('multi',vset.length>1);const i=vset[vi];vimg.src=i.src;vimg.alt=i.alt;document.getElementById('vcount').textContent=(vi+1)+' de '+vset.length;dlg.showModal();});
+});
+document.getElementById('vprev').addEventListener('click',()=>{vi=(vi-1+vset.length)%vset.length;vshow();});
+document.getElementById('vnext').addEventListener('click',()=>{vi=(vi+1)%vset.length;vshow();});
+dlg.addEventListener('keydown',e=>{if(vset.length<2)return;if(e.key==='ArrowRight'){vi=(vi+1)%vset.length;vshow();}if(e.key==='ArrowLeft'){vi=(vi-1+vset.length)%vset.length;vshow();}});
+document.getElementById('close').addEventListener('click',()=>dlg.close());
+dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close();});
+
+(function(){
+  const fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!fine) return;
+  document.querySelectorAll('.tile,.award').forEach(el=>{
+    el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect();el.style.setProperty('--mx',(e.clientX-r.left)+'px');el.style.setProperty('--my',(e.clientY-r.top)+'px');});
+  });
+  if(reduce) return;
+  document.querySelectorAll('.svc .tile,.fact').forEach(el=>{
+    el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+      el.style.transform=`perspective(700px) rotateX(${-y*10}deg) rotateY(${x*12}deg) translateY(-6px) scale(1.03)`;});
+    el.addEventListener('pointerleave',()=>{el.style.transform='';});
+  });
+  document.querySelectorAll('.btn,.send,.nav .cta').forEach(el=>{
+    el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect();const x=e.clientX-r.left-r.width/2,y=e.clientY-r.top-r.height/2;
+      el.style.transform=`translate(${x*.25}px,${y*.35}px) scale(1.05)`;});
+    el.addEventListener('pointerleave',()=>{el.style.transform='';});
+  });
+})();
+
+/* Galerias: arrastar, setas e barra de progresso */
+document.querySelectorAll('.row-content').forEach(rc=>{
+  const g=rc.querySelector('.gallery');if(!g)return;
+  const bar=rc.querySelector('.gbar'),prev=rc.querySelector('.gprev'),next=rc.querySelector('.gnext');
+  function upd(){const max=g.scrollWidth-g.clientWidth;const p=max>0?g.scrollLeft/max:1;if(bar)bar.style.setProperty('--p',(12+p*88)+'%');if(prev)prev.disabled=g.scrollLeft<4;if(next)next.disabled=g.scrollLeft>max-4;}
+  g.addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);setTimeout(upd,300);
+  const step=()=>(g.querySelector('button')?.getBoundingClientRect().width||400)+16;
+  prev&&prev.addEventListener('click',()=>g.scrollBy({left:-step()}));
+  next&&next.addEventListener('click',()=>g.scrollBy({left:step()}));
+  let down=false,sx=0,sl=0,moved=0;
+  g.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse')return;down=true;moved=0;sx=e.clientX;sl=g.scrollLeft;});
+  addEventListener('pointermove',e=>{if(!down)return;const dx=e.clientX-sx;moved=Math.max(moved,Math.abs(dx));if(moved>6)g.classList.add('drag');g.scrollLeft=sl-dx;});
+  addEventListener('pointerup',()=>{if(!down)return;down=false;setTimeout(()=>g.classList.remove('drag'),0);});
+  g.closest('.row').querySelector('.row-head').addEventListener('click',()=>setTimeout(upd,500));
+});
+
+/* Prévia flutuante ao passar sobre um projeto fechado */
+(function(){
+  if(!matchMedia('(hover:hover) and (pointer:fine)').matches)return;
+  const pk=document.getElementById('peek'),pimg=pk.querySelector('img');
+  let x=0,y=0,cx=0,cy=0,vx=0,active=false;
+  document.querySelectorAll('.row.proj').forEach(r=>{
+    const head=r.querySelector('.row-head');const first=r.querySelector('.gallery img');
+    head.addEventListener('pointerenter',()=>{if(r.classList.contains('open'))return;pimg.src=first.src;pk.classList.add('on');active=true;});
+    head.addEventListener('pointerleave',()=>{pk.classList.remove('on');active=false;});
+    head.addEventListener('click',()=>{pk.classList.remove('on');active=false;});
+  });
+  addEventListener('pointermove',e=>{x=e.clientX+190;y=e.clientY;});
+  (function loop(){const nx=cx+(x-cx)*.14,ny=cy+(y-cy)*.14;vx=nx-cx;cx=nx;cy=ny;
+    pk.style.setProperty('--x',cx+'px');pk.style.setProperty('--y',cy+'px');pk.style.setProperty('--r',Math.max(-12,Math.min(12,vx*.6))+'deg');requestAnimationFrame(loop);})();
+})();
+
+/* Galerias aparecem deslizando quando a pessoa chega nelas */
+(function(){
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const gio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('seen');gio.unobserve(e.target);}}),{threshold:0,rootMargin:'0px 0px -15% 0px'});
+  document.querySelectorAll('.gallery').forEach(g=>gio.observe(g));
+
+  /* Carrosséis: abrem em leque e depois vão passando sozinhos para o lado */
+  document.querySelectorAll('.set').forEach(set=>{
+    const cards=[...set.querySelectorAll('.card')],n=cards.length,num=set.querySelector('.count b');
+    let cur=0,timer=null,visible=false,hover=false;
+    function place(){cards.forEach((c,j)=>{const p=(j-cur+n)%n;c.dataset.pos=Math.min(p,3);});set.dataset.cur=cur;if(num)num.textContent=cur+1;}
+    function step(){
+      if(hover||!visible||n<2)return;
+      set.classList.add('cycling');
+      const out=cards[cur];out.dataset.pos=-1;
+      cur=(cur+1)%n;
+      cards.forEach((c,j)=>{if(c!==out){const p=(j-cur+n)%n;c.dataset.pos=Math.min(p,3);}});
+      set.dataset.cur=cur;if(num)num.textContent=cur+1;
+      setTimeout(()=>{set.classList.add('jump');out.dataset.pos=Math.min(n-1,3);void out.offsetWidth;set.classList.remove('jump');},1250);
+    }
+    set.addEventListener('pointerenter',()=>hover=true);
+    set.addEventListener('pointerleave',()=>hover=false);
+    new IntersectionObserver(es=>{
+      visible=es[0].isIntersecting;
+      if(visible&&!set.classList.contains('live')){setTimeout(()=>set.classList.add('live'),500+(+getComputedStyle(set).getPropertyValue('--i')||0)*200);}
+      if(visible&&!timer&&!reduce){timer=setInterval(step,4500);}
+      if(!visible&&timer){clearInterval(timer);timer=null;}
+    },{threshold:.6}).observe(set);
+    place();
+  });
+})();
+
+/* Bola líquida colorida ao lado do nome */
+(function(){
+  const c=document.getElementById('orb');if(!c)return;const gl=c.getContext('webgl',{premultipliedAlpha:true,alpha:true});if(!gl)return;
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const dpr=Math.min(devicePixelRatio||1,3);c.width=c.height=Math.round(20*dpr*1.5);
+  const vs='attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}';
+  const fs=`precision highp float;uniform vec2 r;uniform float t;uniform vec2 m;uniform float hv;
+  float h(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+  float n(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(h(i),h(i+vec2(1,0)),f.x),mix(h(i+vec2(0,1)),h(i+vec2(1,1)),f.x),f.y);}
+  float fbm(vec2 p){float v=0.,a=.5;for(int i=0;i<4;i++){v+=a*n(p);p*=2.03;a*=.5;}return v;}
+  void main(){
+    vec2 uv=(gl_FragCoord.xy-.5*r)/(.5*r.y)*1.12;
+    float d=length(uv);
+    float edge=1.-smoothstep(.97,1.,d);
+    if(edge<=0.){gl_FragColor=vec4(0.);return;}
+    vec3 nrm=normalize(vec3(uv,sqrt(max(1.-d*d,0.))));
+    float sp=1.+hv*1.8;
+    vec2 q=nrm.xy*1.6+vec2(t*.15*sp,-t*.1*sp);
+    vec2 w=vec2(fbm(q+t*.2*sp),fbm(q+4.3-t*.17*sp));
+    float f=fbm(q+2.2*w);
+    vec3 pk=vec3(1.,.18,.42),og=vec3(1.,.55,0.),ye=vec3(1.,.86,.05),gr=vec3(.1,.78,.45),bl=vec3(.05,.45,1.),pu=vec3(.62,.2,1.);
+    float s=fract(f*1.35+w.x*.6+t*.03);
+    vec3 col=s<.1667?mix(pk,og,s*6.):s<.3333?mix(og,ye,(s-.1667)*6.):s<.5?mix(ye,gr,(s-.3333)*6.):s<.6667?mix(gr,bl,(s-.5)*6.):s<.8333?mix(bl,pu,(s-.6667)*6.):mix(pu,pk,(s-.8333)*6.);
+    vec3 L=normalize(vec3(m*.9+vec2(-.4,.5),.9));
+    float dif=.55+.45*max(dot(nrm,L),0.);
+    float spec=pow(max(dot(reflect(-L,nrm),vec3(0,0,1)),0.),28.);
+    float fr=pow(1.-nrm.z,2.5);
+    col=col*dif+spec*.9+fr*vec3(.9,.95,1.)*.35;
+    gl_FragColor=vec4(col*edge,edge);
+  }`;
+  function sh(ty,s){const o=gl.createShader(ty);gl.shaderSource(o,s);gl.compileShader(o);return gl.getShaderParameter(o,gl.COMPILE_STATUS)?o:null;}
+  const p=gl.createProgram(),a=sh(gl.VERTEX_SHADER,vs),b=sh(gl.FRAGMENT_SHADER,fs);if(!a||!b)return;
+  gl.attachShader(p,a);gl.attachShader(p,b);gl.linkProgram(p);gl.useProgram(p);
+  gl.bindBuffer(gl.ARRAY_BUFFER,gl.createBuffer());gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,3,-1,-1,3]),gl.STATIC_DRAW);
+  const l=gl.getAttribLocation(p,'p');gl.enableVertexAttribArray(l);gl.vertexAttribPointer(l,2,gl.FLOAT,false,0,0);
+  const U=k=>gl.getUniformLocation(p,k);gl.viewport(0,0,c.width,c.height);gl.uniform2f(U('r'),c.width,c.height);
+  let mx=0,my=0,tx=0,ty=0,hv=0,ht=0;
+  addEventListener('pointermove',e=>{const R=c.getBoundingClientRect();tx=Math.max(-1,Math.min(1,(e.clientX-(R.left+R.width/2))/300));ty=Math.max(-1,Math.min(1,-(e.clientY-(R.top+R.height/2))/300));});
+  const br=c.closest('.brand');br.addEventListener('pointerenter',()=>ht=1);br.addEventListener('pointerleave',()=>ht=0);
+  const t0=performance.now();
+  function f(now){mx+=(tx-mx)*.08;my+=(ty-my)*.08;hv+=(ht-hv)*.06;
+    gl.uniform1f(U('t'),(now-t0)/1000);gl.uniform2f(U('m'),mx,my);gl.uniform1f(U('hv'),hv);gl.drawArrays(gl.TRIANGLES,0,3);
+    if(!reduce)requestAnimationFrame(f);}
+  requestAnimationFrame(f);
+})();
+
+
+
+
+
+if('IntersectionObserver' in window){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+}else document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'));
+
+document.getElementById('form').addEventListener('submit',e=>{
+  e.preventDefault();
+  const f=e.target,out=document.getElementById('form-msg');
+  const nome=f.nome.value.trim(),email=f.email.value.trim(),msg=f.msg.value.trim();
+  if(!nome||!email||!msg){out.textContent=(window.T?T('Preencha nome, e-mail e a descrição do projeto para enviar.'):'Preencha nome, e-mail e a descrição do projeto para enviar.');return;}
+  const tipo=f.tipo.value;
+  const body=`Nome: ${nome}\nE-mail: ${email}\nTipo: ${tipo}\n\n${msg}`;
+  window.location.href=`mailto:meneghettitom@gmail.com?subject=${encodeURIComponent('Projeto: '+tipo)}&body=${encodeURIComponent(body)}`;
+  out.textContent=(window.T?T('Seu app de e-mail abriu com a mensagem pronta. É só enviar.'):'Seu app de e-mail abriu com a mensagem pronta. É só enviar.');
+});
+
+(function(){
+  const canvas=document.getElementById('halftone');
+  const gl=canvas.getContext('webgl',{antialias:false,premultipliedAlpha:false});
+  if(!gl) return;
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const vs=`attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}`;
+  const fs=`precision highp float;
+uniform vec2 uRes;uniform float uTime;uniform vec2 uMouse;uniform float uHover;uniform float uGlitch;uniform vec2 uCenter;uniform float uR;uniform float uCell;
+float h(float n){return fract(sin(n)*43758.5453);}
+vec2 blobPos(float i,float t){return vec2(.5+.34*sin(t*.23*(1.+i*.17)+i*2.1)+.1*sin(t*.61+i*5.3), .5+.3*cos(t*.19*(1.+i*.13)+i*1.7)+.08*cos(t*.53+i*3.9));}
+vec3 field(vec2 px){
+  vec2 uv=px/uRes.y; float asp=uRes.x/uRes.y; float t=uTime;
+  vec2 m=uMouse/uRes.y;
+  vec3 acc=vec3(0.); float wsum=0.;
+  vec3 pal[6];
+  pal[0]=vec3(1.,.18,.42); pal[1]=vec3(1.,.55,0.); pal[2]=vec3(1.,.86,.05);
+  pal[3]=vec3(.1,.78,.45); pal[4]=vec3(.05,.45,1.); pal[5]=vec3(.62,.2,1.);
+  for(int k=0;k<6;k++){
+    float i=float(k);
+    vec2 p=blobPos(i,t); p.x=uCenter.x+(p.x-.5)*asp*.62; p.y=uCenter.y+(p.y-.5)*.9;
+    vec2 d=uv-p;
+    vec2 toM=m-p; float pull=uHover*exp(-dot(toM,toM)*6.)*.9; p+=toM*pull*.35; d=uv-p;
+    float r=uR*(.62+.25*sin(t*.7+i*1.3));
+    float w=exp(-dot(d,d)/(r*r));
+    acc+=pal[k]*w; wsum+=w;
+  }
+  float md=length(uv-m);
+  float mw=uHover*exp(-md*md/(uR*uR*.35));
+  vec3 mc=.5+.5*cos(6.2831*(t*.12+vec3(0.,.33,.67)));
+  acc+=mc*mw*1.4; wsum+=mw*1.4;
+  vec3 col=acc/max(wsum,1e-4);
+  col=clamp(mix(vec3(dot(col,vec3(.333))),col,1.6),0.,1.);
+  col/=max(max(col.r,col.g),max(col.b,1e-3));
+  float cover=smoothstep(.12,.9,wsum);
+  float ring=uHover*.18*max(sin(md*55.-t*6.),0.)*exp(-md*7.);
+  cover=clamp(cover+ring,0.,1.);
+  return mix(vec3(1.),col,cover);
+}
+vec4 cmyk(vec3 c){float k=1.-max(max(c.r,c.g),c.b);float d=max(1.-k,1e-4);return vec4((1.-c.r-k)/d,(1.-c.g-k)/d,(1.-c.b-k)/d,k);}
+float screenDot(vec2 px,float ang,int ch,vec2 off){
+  vec2 q=px+off; float cs=cos(ang),sn=sin(ang);
+  mat2 R=mat2(cs,-sn,sn,cs), Ri=mat2(cs,sn,-sn,cs);
+  vec2 rp=R*q; vec2 cell=floor(rp/uCell); vec2 ctr=Ri*((cell+.5)*uCell)-off;
+  vec4 v=cmyk(field(ctr));
+  float a=ch==0?v.x:ch==1?v.y:ch==2?v.z:v.w;
+  if(ch==3)a=a*.25;
+  float rad=sqrt(clamp(a,0.,1.))*uCell*.62;
+  return 1.-smoothstep(rad-.9,rad+.6,length(rp-(cell+.5)*uCell));
+}
+void main(){
+  vec2 px=gl_FragCoord.xy;
+  float g=uGlitch;
+  float band=floor(px.y/(uCell*1.6));
+  float tick=floor(uTime*14.);
+  float shift=0.;
+  if(h(band*7.13+tick)<g*.5) shift=(h(band+tick*3.1)-.5)*uCell*16.*g;
+  px.x+=shift;
+  float mis=uCell*.6*g;
+  vec2 oc=vec2(mis,0.)*vec2(cos(uTime*9.),1.), om=vec2(-mis*.7,mis*.5), oy=vec2(0.,-mis*.6);
+  float C=screenDot(px,.2618,0,oc);
+  float M=screenDot(px,1.309,1,om);
+  float Y=screenDot(px,0.,2,oy);
+  float K=screenDot(px,.7854,3,vec2(0.));
+  vec3 paper=vec3(.984,.984,.992);
+  vec3 col=paper;
+  col*=mix(vec3(1.),vec3(0.,.68,.94),C);
+  col*=mix(vec3(1.),vec3(.93,0.,.55),M);
+  col*=mix(vec3(1.),vec3(1.,.93,0.),Y);
+  col*=mix(vec3(1.),vec3(.12,.12,.14),K);
+  gl_FragColor=vec4(col,1.);
+}`;
+  function sh(type,src){const s=gl.createShader(type);gl.shaderSource(s,src);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS)){console.error(gl.getShaderInfoLog(s));return null;}return s;}
+  const pr=gl.createProgram();const a=sh(gl.VERTEX_SHADER,vs),b=sh(gl.FRAGMENT_SHADER,fs);if(!a||!b)return;
+  gl.attachShader(pr,a);gl.attachShader(pr,b);gl.linkProgram(pr);gl.useProgram(pr);
+  const buf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buf);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,3,-1,-1,3]),gl.STATIC_DRAW);
+  const loc=gl.getAttribLocation(pr,'p');gl.enableVertexAttribArray(loc);gl.vertexAttribPointer(loc,2,gl.FLOAT,false,0,0);
+  const U=n=>gl.getUniformLocation(pr,n);
+  const uRes=U('uRes'),uTime=U('uTime'),uMouse=U('uMouse'),uHover=U('uHover'),uGlitch=U('uGlitch'),uCenter=U('uCenter'),uR=U('uR'),uCell=U('uCell');
+  let dpr=1,W=0,H=0;
+  const st={mx:0,my:0,tx:0,ty:0,hover:0,ht:0,glitch:0,lastX:0,lastY:0};
+  function resize(){dpr=Math.min(devicePixelRatio||1,2);const r=canvas.getBoundingClientRect();W=Math.round(r.width*dpr);H=Math.round(r.height*dpr);canvas.width=W;canvas.height=H;gl.viewport(0,0,W,H);
+    const aspect=W/H; if(aspect>1.1){gl.uniform2f(uCenter,aspect*.7,.52);gl.uniform1f(uR,.26);}else{gl.uniform2f(uCenter,aspect*.5,.68);gl.uniform1f(uR,Math.min(.2,aspect*.3));}
+    gl.uniform1f(uCell,(W<900?8:10)*dpr);gl.uniform2f(uRes,W,H);
+    if(!st.tx){st.tx=st.mx=W*.7;st.ty=st.my=H*.5;}
+  }
+  addEventListener('resize',resize);resize();
+  canvas.parentElement.addEventListener('pointermove',e=>{const r=canvas.getBoundingClientRect();const x=(e.clientX-r.left)*dpr,y=(r.height-(e.clientY-r.top))*dpr;
+    const v=Math.hypot(x-st.lastX,y-st.lastY);st.lastX=x;st.lastY=y;st.tx=x;st.ty=y;st.ht=1;st.glitch=Math.min(1,st.glitch+v/(260*dpr));});
+  canvas.parentElement.addEventListener('pointerleave',()=>{st.ht=0;});
+  canvas.addEventListener('pointerdown',()=>{st.glitch=1;});
+  let t0=performance.now(),next=2.5,running=false,loop=false;
+  new IntersectionObserver(es=>{running=es[0].isIntersecting;if(running&&!loop){loop=true;requestAnimationFrame(frame);}}).observe(canvas);
+  function frame(now){
+    if(!running){loop=false;return;}
+    const t=(now-t0)/1000;
+    st.mx+=(st.tx-st.mx)*.12;st.my+=(st.ty-st.my)*.12;st.hover+=(st.ht-st.hover)*.06;st.glitch*=.92;
+    if(t>next){st.glitch=Math.max(st.glitch,.55+Math.random()*.4);next=t+2.5+Math.random()*3.5;}
+    gl.uniform1f(uTime,t);gl.uniform2f(uMouse,st.mx,st.my);gl.uniform1f(uHover,st.hover);gl.uniform1f(uGlitch,reduce?0:st.glitch);
+    gl.drawArrays(gl.TRIANGLES,0,3);
+    if(!reduce) requestAnimationFrame(frame); else loop=false;
+  }
+})();
+</script>
+<script>
+/* +250K: contador que cresce quando o projeto aparece */
+(function(){
+  const p=document.querySelector('.pz-stat');if(!p)return;
+  const el=p.querySelector('strong'),to=+el.dataset.to;
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let raf=0,vis=false;
+  function run(){
+    if(reduce){el.textContent='+'+to+'K';return;}
+    cancelAnimationFrame(raf);p.classList.remove('go','done');void p.offsetWidth;p.classList.add('go');
+    const t0=performance.now(),dur=1800;
+    (function f(t){const k=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-k,4);
+      el.textContent='+'+Math.round(to*e)+'K';
+      if(k<1)raf=requestAnimationFrame(f);else p.classList.add('done');})(t0);
+  }
+  const row=p.closest('.row');
+  new IntersectionObserver(es=>{const v=es[0].isIntersecting;if(v&&!vis&&row.classList.contains('open'))run();vis=v;},{threshold:.6}).observe(p);
+  row.querySelector('.row-head').addEventListener('click',()=>{if(row.classList.contains('open'))setTimeout(run,350);});
+})();
+</script>
+<script>
+/* Views dos posts mais vistos: contam até o número quando aparecem */
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  function parse(t){const m=t.match(/([\d.,]+)/);const raw=m[1];const dec=raw.includes(',');return {v:parseFloat(raw.replace(/\./g,'').replace(',','.')),dec};}
+  function fmt(x,dec){const en=document.documentElement.lang==='en';return en?(dec?x.toFixed(1):Math.round(x))+'K':(dec?x.toFixed(1).replace('.',','):Math.round(x))+' mil';}
+  function run(b){
+    if(b._run)return;b._run=1;const badge=b.parentElement;const {v,dec}=parse(b.dataset.v);
+    badge.classList.add('counting');const t0=performance.now(),dur=1600+Math.min(v,700);
+    (function f(t){const k=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-k,3);b.textContent=fmt(v*e,dec);
+      if(k<1)requestAnimationFrame(f);else{b.textContent=(document.documentElement.lang==='en'&&window.T)?T(b.dataset.v):b.dataset.v;badge.classList.remove('counting');badge.classList.add('hit');setTimeout(()=>{badge.classList.remove('hit');b._run=0;},700);}})(t0);
+  }
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)run(e.target);}),{threshold:.5});
+  document.querySelectorAll('.pz-n').forEach(b=>io.observe(b));
+})();
+</script>
+<script>
+/* Olhinhos de monstro que seguem o mouse */
+(function(){
+  const svg=document.getElementById('eyes');if(!svg)return;
+  const eyes=[...svg.querySelectorAll('.eye')].map(g=>({g,iris:g.querySelector('.iris'),cx:+g.dataset.cx,cy:+g.dataset.cy,r:+g.dataset.r}));
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let mx=innerWidth/2,my=innerHeight/2;
+  function look(){const b=svg.getBoundingClientRect(),s=b.width/46;
+    eyes.forEach(e=>{const ex=b.left+e.cx*s,ey=b.top+e.cy*s,dx=mx-ex,dy=my-ey,d=Math.hypot(dx,dy)||1,k=Math.min(1,d/160)*e.r;
+      e.iris.style.transform=`translate(${dx/d*k}px,${dy/d*k}px)`;});}
+  addEventListener('pointermove',e=>{mx=e.clientX;my=e.clientY;requestAnimationFrame(look);},{passive:true});
+  addEventListener('scroll',()=>requestAnimationFrame(look),{passive:true});
+  look();
+  if(reduce)return;
+  (function blink(){setTimeout(()=>{svg.classList.add('blink');setTimeout(()=>{svg.classList.remove('blink');if(Math.random()<.25)setTimeout(()=>{svg.classList.add('blink');setTimeout(()=>svg.classList.remove('blink'),110);},180);blink();},120);},2500+Math.random()*3500);})();
+  document.addEventListener('pointerdown',()=>{svg.classList.add('blink');setTimeout(()=>svg.classList.remove('blink'),120);});
+})();
+</script>
+<script>
+/* Português / English */
+(function(){
+  const EN={"Sobre": "About", "Trabalhos": "Work", "Serviços": "Services", "Experiência": "Experience", "Contato": "Contact", "Antônio Meneghetti, designer e diretor de arte": "Antônio Meneghetti, designer and art director", "Design que comunica.": "Design that speaks.", "Da identidade visual ao anúncio que vende, com a ideia e a peça final no mesmo lugar.": "From visual identity to the ad that sells, with the idea and the final piece in one place.", "Ver trabalhos": "See my work", "Fale comigo": "Get in touch", "Passe o mouse para misturar as cores": "Move your mouse to mix the colors", "Sobre mim.": "About me.", "Onde design, marketing e estratégia se encontram.": "Where design, marketing and strategy meet.", "Oi, eu sou o Antônio.": "Hi, I'm Antônio.", "Comecei como freelancer em 2017 e, desde então, passei por estúdio, agências, educação e governo. Liderei equipes como": "I started freelancing in 2017 and have since worked across studios, agencies, education and government. I've led teams as", "designer chefe": "head designer", ", fui o único designer de uma escola inteira e hoje assino a": ", been the only designer for an entire school, and today I lead the", "direção de arte da comunicação de Porto Alegre": "art direction for the City of Porto Alegre's communications", "O contato constante com marcas, startups e projetos reais me levou além do design, para dentro do marketing e da publicidade: narrativa, posicionamento, ganchos de venda e performance de campanha.": "Constant work with brands, startups and real projects took me beyond design and into marketing and advertising: storytelling, positioning, sales hooks and campaign performance.", "Design de Produto": "Product Design", "PUCRS, concluído em 2025": "PUCRS, graduated 2025", "Fluência nativa em inglês": "Native-level English", "Certificado Cambridge English First": "Cambridge English First certificate", "Trabalhos selecionados.": "Selected work.", "Toque em um projeto para ver as peças.": "Tap a project to see the pieces.", "Prefeitura de Porto Alegre": "City of Porto Alegre", "Direção de arte e campanhas": "Art direction and campaigns", "Direção de arte da comunicação oficial da cidade: serviços do 156, educação, limpeza urbana, praças, acesso à informação e datas importantes de Porto Alegre. Uma linguagem consistente para falar com mais de um milhão de pessoas.": "Art direction for the city's official communications: the 156 service line, education, urban cleaning, parks, access to information and key dates in Porto Alegre. One consistent language to speak to over a million people.", "de 8": "of 8", "de 4": "of 4", "de 2": "of 2", "de 3": "of 3", "Projeto conceitual e autoral · +250K views mensais": "Conceptual personal project · +250K monthly views", "views mensais": "monthly views", "Projeto conceitual e autoral baseado em Porto Alegre, movido pela divulgação e colaboração em eventos na cidade.": "A conceptual personal project based in Porto Alegre, driven by promoting and collaborating on events across the city.", "671 mil": "671K", "49,9 mil": "49.9K", "curtidas": "likes", "comentários": "comments", "2.324": "2,324", "20,5 mil": "20.5K", "compartilhamentos": "shares", "1.947": "1,947", "salvos": "saves", "347 mil": "347K", "28,6 mil": "28.6K", "1.842": "1,842", "14,8 mil": "14.8K", "2.198": "2,198", "158 mil": "158K", "10,3 mil": "10.3K", "6,6 mil": "6.6K", "Museu do Inter e Museu do Grêmio": "Inter Museum and Grêmio Museum", "Campanha com a Prefeitura": "Campaign with the City of Porto Alegre", "Campanha de divulgação dos museus dos dois clubes da cidade, feita em parceria com a Prefeitura. O desafio foi dar a cada um a própria personalidade sem quebrar a linguagem da campanha.": "A campaign promoting the museums of the city's two football clubs, in partnership with the City. The challenge was giving each its own personality without breaking the campaign's language.", "Olympikus e Maratona Internacional de Porto Alegre": "Olympikus and Porto Alegre International Marathon", "Campanha de evento": "Event campaign", "Peças da reta final de inscrições da Maratona Internacional de Porto Alegre, em parceria com a Olympikus.": "Pieces for the final registration push of the Porto Alegre International Marathon, in partnership with Olympikus.", "Claire Fancin Cosméticos": "Claire Fancin Cosmetics", "Arte criativa e embalagem": "Creative art and packaging", "Identidade e aplicações para uma linha de cosméticos, das embalagens às peças de divulgação.": "Identity and applications for a cosmetics line, from packaging to promotional pieces.", "Conteúdo e anúncios para uma empresa especializada em vans e utilitários, com foco em serviço, confiança e conversão.": "Content and ads for a company specializing in vans and utility vehicles, focused on service, trust and conversion.", "Social media e copy": "Social media and copy", "Carrosséis e posts de conteúdo sobre negócios e marketing, com ganchos fortes para parar a rolagem.": "Carousels and content posts about business and marketing, with strong hooks to stop the scroll.", "Marcas e instituições com quem já trabalhei": "Brands and institutions I've worked with", "O que eu faço.": "What I do.", "Cada peça existe para informar, engajar ou vender. E a marca sai mais forte no final.": "Every piece exists to inform, engage or sell. And the brand comes out stronger.", "Direção de arte": "Art direction", "Design gráfico": "Graphic design", "Identidade visual e branding": "Visual identity and branding", "Campanhas e anúncios": "Campaigns and ads", "Copywriting estratégico": "Strategic copywriting", "Vídeos, reels e VSL": "Videos, reels and VSL", "Design de embalagem": "Packaging design", "Design gastronômico": "Food design", "Feito com": "Made with", "e": "and", "Experiência.": "Experience.", "Desde 2017, entre estúdio, agência, educação e governo.": "Since 2017, across studio, agency, education and government.", "Diretor de arte e designer": "Art director and designer", "No Gabinete de Comunicação Social, liderei a execução da comunicação visual da cidade. O trabalho recebeu um prêmio nacional na categoria Identidade.": "At the Social Communication Office, I led the execution of the city's visual communication. The work won a national award in the Identity category.", "Comunicação criativa": "Creative communication", "Direcionamento estratégico": "Strategic direction", "Design gráfico estratégico": "Strategic graphic design", "Branding de longo prazo": "Long-term branding", "Câmara Municipal de Porto Alegre": "Porto Alegre City Council", "Assessor de comunicação parlamentar e produtor de conteúdo político": "Parliamentary communications advisor and political content producer", "No gabinete de vereadores, conduzi a comunicação política direta: relacionamento, gestão de crise, design, captação em agenda e edição de vídeo. Vivi uma campanha política completa, do planejamento à rua.": "In a council member's office, I ran direct political communication: relationships, crisis management, design, on-site shooting and video editing. I went through a full political campaign, from planning to the streets.", "Estratégia de comunicação": "Communication strategy", "Captação e edição de vídeo": "Video shooting and editing", "Relacionamento": "Relationship management", "Único designer da empresa, responsável pela estratégia e execução da comunicação visual. Criei narrativas, posicionamento e ganchos para lives de lançamento, e cuidei de toda a identidade, anúncios e captação da escola botânica @elmundodemusgo.": "The company's only designer, responsible for visual communication strategy and execution. I created narratives, positioning and hooks for launch livestreams, and handled all identity, ads and shooting for the botanical school @elmundodemusgo.", "Captação de anúncios": "Ad shooting", "Edição de VSL": "VSL editing", "Automação de comunicação": "Communication automation", "Designer chefe": "Head designer", "Papel estratégico entre design, direção criativa e gestão de projetos. Conduzi projetos de grande porte do planejamento à entrega final, incluindo marcas como a RenauxView, maior empresa do setor.": "A strategic role spanning design, creative direction and project management. I led large projects from planning to final delivery, including brands like RenauxView, the largest company in its sector.", "Gestão de projetos": "Project management", "Direção criativa": "Creative direction", "Liderança de equipe": "Team leadership", "Planejamento e criação de conteúdo para redes sociais de clientes da agência.": "Social media content planning and creation for agency clients.", "Designer gráfico": "Graphic designer", "Criação de peças gráficas e digitais para clientes da agência.": "Print and digital pieces for agency clients.", "Designer freelancer": "Freelance designer", "Seis anos atendendo marcas e projetos como freelancer, onde construí a base de design gráfico, embalagem e social media.": "Six years freelancing for brands and projects, where I built my foundation in graphic design, packaging and social media.", "Embalagem": "Packaging", "Prêmio nacional, 2026": "National award, 2026", "Categoria Identidade, Social MediaGov.": "Identity category, Social MediaGov.", "Com a Prefeitura de Porto Alegre, ajudei a construir uma comunicação estruturada para a cidade inteira. O trabalho foi reconhecido nacionalmente.": "With the City of Porto Alegre, I helped build structured communication for the entire city. The work was recognized nationally.", "Vamos criar algo juntos.": "Let's make something together.", "Me conta do seu projeto. Ou escreva direto para": "Tell me about your project. Or write directly to", "Do que você precisa?": "What do you need?", "Identidade visual": "Visual identity", "Campanha e anúncios": "Campaigns and ads", "Outro": "Other", "Enviar mensagem": "Send message", "Navegar": "Navigate", "Redes": "Social", "Onde": "Where", "Projetos para qualquer lugar": "Projects anywhere", "Copyright © 2026 Antônio Meneghetti. Todos os direitos reservados.": "Copyright © 2026 Antônio Meneghetti. All rights reserved.", "Fechar": "Close", "Disponível para projetos": "Available for projects", "PH:Seu nome": "Your name", "PH:Seu e-mail": "Your email", "PH:Sobre o projeto": "About the project", "AL:Peça anterior": "Previous piece", "AL:Próxima peça": "Next piece", "AL:mais de 250 mil": "over 250 thousand", "AL:Imagem ampliada": "Enlarged image", "AL:Arte anterior": "Previous artwork", "AL:Próxima arte": "Next artwork", "Preencha nome, e-mail e a descrição do projeto para enviar.": "Fill in your name, email and project description to send.", "Seu app de e-mail abriu com a mensagem pronta. É só enviar.": "Your email app opened with the message ready. Just hit send."};
+  const store=new WeakMap();const attrs=[];
+  window.T=t=>document.documentElement.lang==='en'?(EN[t]||t):t;
+  const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:n=>{const p=n.parentElement;if(!p||p.closest('script,style,svg'))return 2;return EN[n.nodeValue.trim()]?1:2;}});
+  const nodes=[];let n;while(n=w.nextNode())nodes.push(n);
+  document.querySelectorAll('[placeholder]').forEach(e=>{const k='PH:'+e.placeholder;if(EN[k])attrs.push([e,'placeholder',e.placeholder,EN[k]]);});
+  document.querySelectorAll('[aria-label]').forEach(e=>{const v=e.getAttribute('aria-label'),k='AL:'+v;if(EN[k])attrs.push([e,'aria-label',v,EN[k]]);});
+  nodes.forEach(n=>store.set(n,n.nodeValue));
+  const btn=document.getElementById('lang');
+  function set(l){
+    document.documentElement.lang=l==='en'?'en':'pt-BR';
+    nodes.forEach(n=>{const o=store.get(n),t=o.trim();n.nodeValue=l==='en'?o.replace(t,EN[t]):o;});
+    attrs.forEach(([e,a,pt,en])=>e.setAttribute(a,l==='en'?en:pt));
+    btn.setAttribute('aria-label',l==='en'?'Mudar para português':'Switch to English');
+    document.title=l==='en'?'Antônio Meneghetti, designer and art director':'Antônio Meneghetti, designer e diretor de arte';
+    try{localStorage.setItem('lang',l)}catch(e){}
+  }
+  btn.addEventListener('click',()=>set(document.documentElement.lang==='en'?'pt':'en'));
+  let saved=null;try{saved=localStorage.getItem('lang')}catch(e){}
+  if(saved==='en')set('en');
+})();
+</script>
+<script>
+/* Cursor personalizado de meio-tom */
+(function(){
+  if(!matchMedia('(hover:hover) and (pointer:fine)').matches)return;
+  const H=document.documentElement,dot=document.querySelector('.cc-dot'),ring=document.querySelector('.cc-ring'),lab=ring.querySelector('b');
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let x=-100,y=-100,rx=-100,ry=-100;
+  addEventListener('pointermove',e=>{x=e.clientX;y=e.clientY;H.classList.add('cc-on');
+    dot.style.transform=`translate(${x}px,${y}px)`;
+    const t=e.target;
+    const view=t.closest&&t.closest('.gallery button,.row.proj .row-head');
+    const text=t.closest&&t.closest('input,textarea');
+    const link=!view&&t.closest&&t.closest('a,button,label,[role=button],.mq li,.tile,.fact');
+    H.classList.toggle('cc-view',!!view);H.classList.toggle('cc-link',!!link);H.classList.toggle('cc-text',!!text);
+    if(view)lab.textContent=H.lang==='en'?(t.closest('.row-head')?'Open':'View'):(t.closest('.row-head')?'Abrir':'Ver');
+  },{passive:true});
+  addEventListener('pointerdown',()=>H.classList.add('cc-down'));
+  addEventListener('pointerup',()=>H.classList.remove('cc-down'));
+  document.addEventListener('pointerleave',()=>H.classList.remove('cc-on'));
+  document.addEventListener('mouseleave',()=>H.classList.remove('cc-on'));
+  let lt=performance.now();(function loop(t){t=t||lt;const dt=Math.min(100,t-lt);lt=t;const k=reduce?1:1-Math.pow(.82,dt/16.7);rx+=(x-rx)*k;ry+=(y-ry)*k;ring.style.transform=`translate(${rx}px,${ry}px)`+(H.classList.contains('cc-down')?' scale(.8)':'');requestAnimationFrame(loop);})();
+})();
+</script>
+<script>
+/* Intro: olhinhos abrem, nome pula colorido e o meio-tom CMYK explode na tela */
+(function(){
+  const H=document.documentElement;if(!H.classList.contains('intro'))return;
+  const cv=document.querySelector('.in-paint'),c=cv.getContext('2d');
+  const dpr=Math.min(2,devicePixelRatio||1);let W=innerWidth,Hh=innerHeight;cv.width=W*dpr;cv.height=Hh*dpr;c.setTransform(dpr,0,0,dpr,0,0);
+  const step=W<700?12:15,maxR=step*.34;
+  const ink=[['#00ADEF',-1,-1],['#EC008C',1,0],['#FFD500',0,1]];
+  const B=[];const cols=[[1,0,0],[0,1,0],[0,0,1],[1,1,0],[0,1,1],[1,0,1]];
+  for(let i=0;i<7;i++){const a=Math.random()*6.283;B.push({x:W/2,y:Hh/2,vx:Math.cos(a)*(.25+Math.random()*.35)*W,vy:Math.sin(a)*(.25+Math.random()*.35)*Hh,r:.12+Math.random()*.2,ch:cols[i%6],delay:i*70});}
+  const t0=performance.now();let raf;
+  function frame(t){
+    const el=t-t0,k=Math.min(1,el/1700);c.clearRect(0,0,W,Hh);c.globalCompositeOperation='multiply';
+    const bl=B.map(b=>{const e=Math.max(0,Math.min(1,(el-b.delay)/1500)),ee=1-Math.pow(1-e,3);
+      return {x:b.x+b.vx*ee*.9+Math.sin(el/260+b.delay)*30,y:b.y+b.vy*ee*.9+Math.cos(el/300+b.delay)*30,R:Math.max(W,Hh)*(b.r*.8+ee*.2),ch:b.ch,on:e>0};});
+    for(let ci=0;ci<3;ci++){const [col,ox,oy]=ink[ci];c.fillStyle=col;c.beginPath();
+      for(let y=step/2;y<Hh+step;y+=step)for(let x=step/2;x<W+step;x+=step){
+        let v=0;for(const b of bl){if(!b.on||!b.ch[ci])continue;const dx=x-b.x,dy=y-b.y,d2=(dx*dx+dy*dy)/(b.R*b.R);if(d2<1)v+=(1-d2)*(1-d2);}
+        v=Math.min(.9,v*1.1);if(v<.05)continue;const r=maxR*Math.sqrt(v);const px=x+ox*step*.3,py=y+oy*step*.3;c.moveTo(px+r,py);c.arc(px,py,r,0,6.283);}
+      c.fill();}
+    c.globalCompositeOperation='source-over';
+    if(k<1)raf=requestAnimationFrame(frame);
+  }
+  raf=requestAnimationFrame(frame);
+  setTimeout(()=>{H.classList.add('intro-out');try{sessionStorage.setItem('intro','1')}catch(e){}
+    setTimeout(()=>{cancelAnimationFrame(raf);H.classList.remove('intro','intro-out');},600);},1950);
+})();
+/* Rodapé: nome gigante feito de pontos que fogem do mouse */
+(function(){
+  const cv=document.getElementById('bigname');if(!cv)return;const ctx=cv.getContext('2d');
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const CM=['#00ADEF','#EC008C','#FFD500'];
+  let P=[],W=0,Hh=0,dpr=1,mx=-1e4,my=-1e4,run=false,ink='#1D1D1F',step=7;
+  function build(){
+    dpr=Math.min(2,devicePixelRatio||1);const r=cv.getBoundingClientRect();W=r.width;Hh=r.height;
+    cv.width=W*dpr;cv.height=Hh*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+    ink=getComputedStyle(cv).color||'#1D1D1F';step=W<600?4:7;
+    const o=document.createElement('canvas');o.width=W;o.height=Hh;const c=o.getContext('2d');
+    const fam=getComputedStyle(document.documentElement).getPropertyValue('--display')||'sans-serif';
+    let fs=Hh*1.05;c.font=`800 ${fs}px ${fam}`;const tw=c.measureText('Meneghetti').width;fs=fs*Math.min(1,(W*.98)/tw);
+    c.font=`800 ${fs}px ${fam}`;c.textBaseline='middle';c.textAlign='center';c.fillStyle='#000';c.fillText('Meneghetti',W/2,Hh*.54);
+    const d=c.getImageData(0,0,W,Hh).data;P=[];
+    for(let y=step/2;y<Hh;y+=step)for(let x=step/2;x<W;x+=step){if(d[(Math.floor(y)*W+Math.floor(x))*4+3]>128)P.push({hx:x,hy:y,x:x,y:y,vx:0,vy:0,c:CM[(Math.random()*3)|0]});}
+    draw();
+  }
+  function draw(){
+    ctx.clearRect(0,0,W,Hh);const R=step*.36;
+    for(const p of P){const off=Math.hypot(p.x-p.hx,p.y-p.hy);ctx.fillStyle=off>2?p.c:ink;ctx.beginPath();ctx.arc(p.x,p.y,off>2?R*1.15:R,0,6.283);ctx.fill();}
+  }
+  function tick(){
+    if(!run)return;let moving=false;const rad=W<600?60:110;
+    for(const p of P){const dx=p.x-mx,dy=p.y-my,d2=dx*dx+dy*dy;
+      if(d2<rad*rad){const d=Math.sqrt(d2)||1,f=(1-d/rad)*6;p.vx+=dx/d*f;p.vy+=dy/d*f;}
+      p.vx+=(p.hx-p.x)*.06;p.vy+=(p.hy-p.y)*.06;p.vx*=.82;p.vy*=.82;p.x+=p.vx;p.y+=p.vy;
+      if(Math.abs(p.vx)+Math.abs(p.vy)>.05||Math.abs(p.x-p.hx)>.3)moving=true;}
+    draw();requestAnimationFrame(tick);
+  }
+  function move(e){const r=cv.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top;}
+  cv.parentElement.addEventListener('pointermove',move,{passive:true});
+  cv.parentElement.addEventListener('pointerleave',()=>{mx=my=-1e4;});
+  (document.fonts?document.fonts.ready:Promise.resolve()).then(()=>{build();
+    if(reduce)return;
+    new IntersectionObserver(es=>{const v=es[0].isIntersecting;if(v&&!run){run=true;requestAnimationFrame(tick);}else if(!v)run=false;}).observe(cv);
+  });
+  let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(build,200);});
+})();
+</script>
+<script>
+/* Títulos que se revelam palavra por palavra ao rolar */
+(function(){
+  const hs=[...document.querySelectorAll('main h2')].filter(h=>!h.classList.contains('clients-label'));
+  function split(h,txt){h.textContent='';txt.split(' ').forEach((w,i)=>{const m=document.createElement('span');m.className='wm';const s=document.createElement('span');s.className='wi';s.style.setProperty('--w',i);s.textContent=w;m.appendChild(s);h.appendChild(m);if(i<txt.split(' ').length-1)h.appendChild(document.createTextNode(' '));});}
+  hs.forEach(h=>{h.dataset.pt=h.textContent.trim();h.setAttribute('aria-label',h.dataset.pt);h.classList.add('split');split(h,(window.T?T(h.dataset.pt):h.dataset.pt));});
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}}),{threshold:.3,rootMargin:'0px 0px -8% 0px'});
+  hs.forEach(h=>io.observe(h));
+  const lb=document.getElementById('lang');
+  if(lb)lb.addEventListener('click',()=>hs.forEach(h=>{const t=window.T?T(h.dataset.pt):h.dataset.pt;split(h,t);h.setAttribute('aria-label',t);}));
+})();
+</script>
+</body>
+</html>
